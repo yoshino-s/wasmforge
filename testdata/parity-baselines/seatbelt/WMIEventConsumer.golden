@@ -1,0 +1,22 @@
+
+
+====== WMIEventConsumer ======
+
+  Name                              :   SCM Event Log Consumer
+  ConsumerType                      :   
+  CreatorSID                        :   Unknown
+  Category                          :   0
+  EventID                           :   0
+  EventType                         :   1
+  InsertionStringTemplates          :   
+  MachineName                       :   
+  MaximumQueueSize                  :   
+  Name                              :   SCM Event Log Consumer
+  NameOfRawDataProperty             :   
+  NameOfUserSIDProperty             :   sid
+  NumberOfInsertionStrings          :   0
+  SourceName                        :   Service Control Manager
+  UNCServerName                     :   
+
+[*] Completed collection in <DURATION>
+

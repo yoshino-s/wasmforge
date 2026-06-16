@@ -1,0 +1,17 @@
+
+  __                 _   _       _ ___
+ (_  |_   _. ._ ._  | \ |_) /\  |_) |
+ __) | | (_| |  |_) |_/ |  /--\ |  _|_
+                |
+  <VERSION>
+[*] Action: Certificate Triage
+
+Folder       : C:\Users\domainuser\AppData\Roaming\Microsoft\Crypto\Keys\
+
+    [!] 91ce8a2a6ead47f06310a1f32c3d1a89_61243150-82d5-409c-ad19-370d263f7b78 masterkey needed: {<GUID>}
+    [!] de7cf8a7901d2ad13e5c67c29e5d1662_61243150-82d5-409c-ad19-370d263f7b78 masterkey needed: {<GUID>}
+    [!] df1b9be82a886c43779a1e6452ccc3c9_61243150-82d5-409c-ad19-370d263f7b78 masterkey needed: {<GUID>}
+
+[*] Hint: openssl pkcs12 -in cert.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out cert.pfx
+
+SharpDPAPI completed in <DURATION>

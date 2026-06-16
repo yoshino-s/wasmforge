@@ -1,0 +1,42 @@
+
+   _____          _   _  __          
+  / ____|        | | (_)/ _|         
+ | |     ___ _ __| |_ _| |_ _   _    
+ | |    / _ \ '__| __| |  _| | | |   
+ | |___|  __/ |  | |_| | | | |_| |   
+  \_____\___|_|   \__|_|_|  \__, |   
+                             __/ |   
+                            |___./   
+  <VERSION>
+[*] Action: Find PKI object controllers
+[*] Using the search base 'CN=Configuration,DC=sevenkingdoms,DC=local'
+
+[*] PKI Object Controllers:
+
+    SEVENKINGDOMS\Cert Publishers (S-1-5-21-4036725276-3362447718-3431182315-517)
+        GenericAll         LDAP://CN=SEVENKINGDOMS-CA,CN=Certification Authorities,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=kingslanding,CN=CDP,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=SEVENKINGDOMS-CA,CN=kingslanding,CN=CDP,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+
+    SEVENKINGDOMS\Exchange Servers (S-1-5-21-4036725276-3362447718-3431182315-1141)
+        WriteAllProperties LDAP://CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+
+    SEVENKINGDOMS\Exchange Trusted Subsystem (S-1-5-21-4036725276-3362447718-3431182315-1142)
+        GenericAll         LDAP://CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+
+    SEVENKINGDOMS\KINGSLANDING$ (S-1-5-21-4036725276-3362447718-3431182315-1001)
+        WriteOwner         LDAP://CN=SEVENKINGDOMS-CA,CN=Enrollment Services,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=SEVENKINGDOMS-CA,CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=SEVENKINGDOMS-CA,CN=kingslanding,CN=CDP,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+        GenericAll         LDAP://CN=SEVENKINGDOMS-CA,CN=KRA,CN=Public Key Services,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+
+    SEVENKINGDOMS\lord.varys (S-1-5-21-4036725276-3362447718-3431182315-1122)
+        GenericAll         LDAP://CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+
+    SEVENKINGDOMS\Organization Management (S-1-5-21-4036725276-3362447718-3431182315-1127)
+        GenericAll         LDAP://CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+
+Certify completed in <DURATION>

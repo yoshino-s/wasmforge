@@ -1,0 +1,27 @@
+
+
+ERROR(S):
+  At least one option from group 'Action' (owner, enroll, write-property, write-owner, write-dacl,
+  authorized-signatures, manager-approval, supply-subject, client-auth, pkinit-auth,
+  smartcard-logon, esc9) is required.
+  Required option 'template' is missing.
+
+  --template                 Required. Target certificate template (format: NAME)
+  --template-domain          Target domain (format: FQDN)
+  --template-ldap-server     Target LDAP server
+  --owner                    (Group: Action) Set the owner of the AD object (format: SID)
+  --enroll                   (Group: Action) Grant 'Enroll' rights (format: SID)
+  --write-property           (Group: Action) Toggle 'WriteProperty' rights (format: SID)
+  --write-owner              (Group: Action) Toggle 'WriteOwner' rights (format: SID)
+  --write-dacl               (Group: Action) Toggle 'WriteDacl' rights (format: SID)
+  --authorized-signatures    (Group: Action) Set authorized signatures attribute (format: NUMBER)
+  --manager-approval         (Group: Action) Enable/disable manager approval
+  --supply-subject           (Group: Action) Enable/disable 'Enrolle Supplies Request'
+  --client-auth              (Group: Action) Enable/disable the 'Client Authentication' EKU
+  --pkinit-auth              (Group: Action) Enable/disable the 'PKINIT Client Authentication' EKU
+  --smartcard-logon          (Group: Action) Enable/disable the 'Smartcard Logon' EKU
+  --esc9                     (Group: Action) Enable/disable ESC9
+  --out-file                 Redirect all output streams to a file (format: FILE-PATH)
+  --quiet                    Omit printing the Certify logo
+
+Certify completed in <DURATION>

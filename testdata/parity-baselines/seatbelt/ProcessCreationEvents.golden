@@ -1,0 +1,9 @@
+
+
+====== ProcessCreationEvents ======
+
+Searching process creation logs (EID 4688) for sensitive data.
+Format: Date(Local time),User,Command line.
+
+[*] Completed collection in <DURATION>
+

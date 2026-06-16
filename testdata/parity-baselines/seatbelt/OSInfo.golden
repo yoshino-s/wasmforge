@@ -1,0 +1,29 @@
+
+
+====== OSInfo ======
+
+  Hostname                      :  GOADf97252-GOAD-Win11
+  Domain Name                   :  sevenkingdoms.local
+  Username                      :  GOADF97252-GOAD\localuser
+  ProductName                   :  Windows 10 Enterprise Evaluation
+  EditionID                     :  EnterpriseEval
+  ReleaseId                     :  2009
+  Build                         :  22621.525
+  BuildBranch                   :  ni_release
+  CurrentMajorVersionNumber     :  10
+  CurrentVersion                :  6.3
+  Architecture                  :  AMD64
+  ProcessorCount                :  4
+  IsVirtualMachine              :  False
+  BootTimeUtc (approx)          :  <TIMESTAMP> (Total uptime: <DURATION>)
+  HighIntegrity                 :  True
+  IsLocalAdmin                  :  True
+  CurrentTimeUtc                :  <TIMESTAMP> (Local time: <TIMESTAMP>)
+  TimeZone                      :  Eastern Standard Time
+  TimeZoneOffset                :  -04:00:00
+  InputLanguage                 :  US
+  InstalledInputLanguages       :  
+  MachineGuid                   :  <GUID>
+
+[*] Completed collection in <DURATION>
+

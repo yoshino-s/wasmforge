@@ -1,0 +1,1 @@
+EXCLUDED: same WMI lazy P/Invoke failure. The patcher does rewrite this check to use WMI + reg_modifiable, but the WMI call itself throws. Fix path: pre-resolve WfWmiCom P/Invokes at NativeAOT publish time, or replace with direct sc_/reg_ bridge enumeration.

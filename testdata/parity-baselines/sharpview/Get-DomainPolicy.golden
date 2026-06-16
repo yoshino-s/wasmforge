@@ -1,0 +1,8 @@
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainGPO] filter string: (&(objectCategory=groupPolicyContainer)(|(name={<GUID>})))
+[Get-GptTmpl] Parsing GptTmplPath: \MACHINE\Microsoft\Windows NT\SecEdit\GptTmpl.inf\MACHINE\Microsoft\Windows NT\SecEdit\GptTmpl.inf
+[Get-GptTmpl] Error parsing $TargetGptTmplPath : System.NullReferenceException: Object reference not set to an instance of an object.
+   at SharpView.Returns.GptTmpl..ctor(Dictionary`2 obj)
+   at SharpView.PowerView.Get_GptTmpl(Args_Get_GptTmpl args)
+

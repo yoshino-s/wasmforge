@@ -1,0 +1,75 @@
+
+   _____          _   _  __          
+  / ____|        | | (_)/ _|         
+ | |     ___ _ __| |_ _| |_ _   _    
+ | |    / _ \ '__| __| |  _| | | |   
+ | |___|  __/ |  | |_| | | | |_| |   
+  \_____\___|_|   \__|_|_|  \__, |   
+                             __/ |   
+                            |___./   
+  <VERSION>
+[*] Action: Find certificate authorities
+[*] Using the search base 'CN=Configuration,DC=sevenkingdoms,DC=local'
+[*] Classifying vulnerabilities in the context of built-in low-privileged domain groups.
+
+[*] Root CAs
+
+    Cert SubjectName              : CN=SEVENKINGDOMS-CA, DC=sevenkingdoms, DC=local
+    Cert Thumbprint               : 9036CE1D5CD19EA8CFEF3D8C3C0CD1FF7C98953A
+    Cert Serial                   : <KEY32>
+    Cert Start Date               : <TIMESTAMP>
+    Cert End Date                 : <TIMESTAMP>
+    Cert Chain                    : CN=SEVENKINGDOMS-CA,DC=sevenkingdoms,DC=local
+
+[*] NTAuthCertificates - Certificates that enable authentication:
+
+    Cert SubjectName              : CN=SEVENKINGDOMS-CA, DC=sevenkingdoms, DC=local
+    Cert Thumbprint               : 9036CE1D5CD19EA8CFEF3D8C3C0CD1FF7C98953A
+    Cert Serial                   : <KEY32>
+    Cert Start Date               : <TIMESTAMP>
+    Cert End Date                 : <TIMESTAMP>
+    Cert Chain                    : CN=SEVENKINGDOMS-CA,DC=sevenkingdoms,DC=local
+
+[*] Enterprise/enrollment certificate authorities:
+
+    Enterprise CA Name            : SEVENKINGDOMS-CA
+    DNS Hostname                  : kingslanding.sevenkingdoms.local
+    FullName                      : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Flags                         : SUPPORTS_NT_AUTHENTICATION, CA_SERVERTYPE_ADVANCED
+    Cert SubjectName              : CN=SEVENKINGDOMS-CA, DC=sevenkingdoms, DC=local
+    Cert Thumbprint               : 9036CE1D5CD19EA8CFEF3D8C3C0CD1FF7C98953A
+    Cert Serial                   : <KEY32>
+    Cert Start Date               : <TIMESTAMP>
+    Cert End Date                 : <TIMESTAMP>
+    Cert Chain                    : CN=SEVENKINGDOMS-CA,DC=sevenkingdoms,DC=local
+    User Specifies SAN            : Disabled
+    RPC Request Encryption        : Enabled
+    Vulnerabilities
+      ESC8                        : The CA supports HTTPS web enrollment without channel binding.
+    CA Permissions
+      Owner: BUILTIN\Administrators             S-1-5-32-544
+
+      Access Rights                                     Principal
+      Allow  Enroll                                     NT AUTHORITY\Authenticated Users   S-1-5-11
+      Allow  ManageCA, ManageCertificates               BUILTIN\Administrators             S-1-5-32-544
+      Allow  ManageCA, ManageCertificates               SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+      Allow  ManageCA, ManageCertificates               SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+    Enrollment Agent Restrictions : None
+
+    Legacy ASP Enrollment Website : https://kingslanding.sevenkingdoms.local/certsrv/
+
+    Enabled Certificate Templates:
+        EnrollmentAgent
+        DirectoryEmailReplication
+        DomainControllerAuthentication
+        KerberosAuthentication
+        EFSRecovery
+        EFS
+        DomainController
+        WebServer
+        Machine
+        User
+        SubCA
+        Administrator
+
+Certify completed in <DURATION>

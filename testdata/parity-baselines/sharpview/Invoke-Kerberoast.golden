@@ -1,0 +1,4 @@
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainUser] Searching for non-null service principal names
+[Get-DomainUser] filter string: (&(samAccountType=805306368)(servicePrincipalName=*))

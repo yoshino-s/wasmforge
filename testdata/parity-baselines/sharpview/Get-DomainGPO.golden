@@ -1,0 +1,47 @@
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainGPO] filter string: (&(objectCategory=groupPolicyContainer))
+objectguid                     : <GUID>
+name                           : {<GUID>}
+distinguishedname              : CN={<GUID>},CN=Policies,CN=System,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+cn                             : {{<GUID>}}
+objectclass                    : {top, container, groupPolicyContainer}
+displayname                    : Default Domain Policy
+showinadvancedviewonly         : True
+flags                          : 0
+usnchanged                     : 69670
+gpcfunctionalityversion        : 2
+gpcfilesyspath                 : \\sevenkingdoms.local\sysvol\sevenkingdoms.local\Policies\{<GUID>}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+systemflags                    : -1946157056
+objectcategory                 : CN=Group-Policy-Container,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 5672
+gpcmachineextensionnames       : [{<GUID>}{<GUID>}][{<GUID>}{<GUID>}][{<GUID>}{<GUID>}]
+versionnumber                  : 4
+instancetype                   : 4
+iscriticalsystemobject         : True
+
+objectguid                     : <GUID>
+name                           : {<GUID>}
+distinguishedname              : CN={<GUID>},CN=Policies,CN=System,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+cn                             : {{<GUID>}}
+objectclass                    : {top, container, groupPolicyContainer}
+displayname                    : Default Domain Controllers Policy
+showinadvancedviewonly         : True
+flags                          : 0
+usnchanged                     : 1212657
+gpcfunctionalityversion        : 2
+gpcfilesyspath                 : \\sevenkingdoms.local\sysvol\sevenkingdoms.local\Policies\{<GUID>}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+systemflags                    : -1946157056
+objectcategory                 : CN=Group-Policy-Container,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 5675
+gpcmachineextensionnames       : [{<GUID>}{<GUID>}]
+versionnumber                  : 7
+instancetype                   : 4
+iscriticalsystemobject         : True
+

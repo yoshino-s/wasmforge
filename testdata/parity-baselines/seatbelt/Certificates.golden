@@ -1,0 +1,15 @@
+
+
+====== Certificates ======
+
+  StoreLocation      : LocalMachine
+  Issuer             : CN=WIN11-22H2-X64
+  Subject            : CN=WIN11-22H2-X64
+  ValidDate          : <TIMESTAMP>
+  ExpiryDate         : <TIMESTAMP>
+  HasPrivateKey      : True
+  KeyExportable      : True
+  Thumbprint         : 967D425DF7ECAA546B799BCAF91FFF244A84EBB1
+
+[*] Completed collection in <DURATION>
+

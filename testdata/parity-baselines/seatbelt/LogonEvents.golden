@@ -1,0 +1,10 @@
+
+
+====== LogonEvents ======
+
+Listing 4624 Account Logon Events for the last 10 days.
+
+  TimeCreated,TargetUser,LogonType,IpAddress,SubjectUsername,AuthenticationPackageName,LmPackageName,TargetOutboundUser
+
+[*] Completed collection in <DURATION>
+

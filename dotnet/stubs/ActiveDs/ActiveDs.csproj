@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ActiveDs</RootNamespace>
+    <AssemblyName>ActiveDs</AssemblyName>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Stub assembly: type surface for ActiveDs COM Interop. SharpView
+         references ADS_NAME_TYPE_ENUM, ADS_GROUP_TYPE_ENUM, and NameTranslate.
+         These will throw at runtime under NativeAOT-WASI; downstream callers
+         are gated by the SharpView verb-specific WfLdap path. -->
+  </PropertyGroup>
+</Project>

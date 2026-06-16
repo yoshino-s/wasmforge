@@ -1,0 +1,24 @@
+
+
+ERROR(S):
+  Required option 'ca' is missing.
+  Required option 'template' is missing.
+
+  --ca                    Required. Target certificate authority (format: SERVER\CA-NAME)
+  --template              Required. Target certificate template
+  --subject               Target subject name
+  --upn                   Target subject alternative name (UPN)
+  --dns                   Target subject alternative name (DNS)
+  --email                 Target subject alternative name (Email)
+  --sid-url               Target subject alternative SID (URL format)
+  --sid                   Target subject alternative SID
+  --application-policy    Target application policy
+  --key-size              (Default: 2048) Key size for the private key
+  --machine               Request as the machine account
+  --output-pem            Output certificate in PEM format
+  --output-csr            Output certificate signing request (CSR)
+  --install               Install certificate in the current store
+  --out-file              Redirect all output streams to a file (format: FILE-PATH)
+  --quiet                 Omit printing the Certify logo
+
+Certify completed in <DURATION>

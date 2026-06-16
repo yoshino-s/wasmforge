@@ -1,0 +1,1 @@
+EXCLUDED: wasmforge WMI bridge throws "Lazy PInvoke resolution is not supported when targeting WebAssembly" on WfWmiCom.Query. SharpUp Checks/ModifiableServiceBinaries.cs uses WMI Win32_Service for enumeration. Existing csharp_patcher has ModifiableServices/ModifiableServiceRegistryKeys real-impl via wmi_query, but Binaries check is not patched yet.

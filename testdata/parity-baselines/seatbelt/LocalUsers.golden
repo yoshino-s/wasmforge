@@ -1,0 +1,66 @@
+
+
+====== LocalUsers ======
+
+  ComputerName                   : localhost
+  UserName                       : Administrator
+  Enabled                        : False
+  Rid                            : 500
+  UserType                       : Administrator
+  Comment                        : Built-in account for administering the computer/domain
+  PwdLastSet                     : <TIMESTAMP>
+  LastLogon                      : <TIMESTAMP>
+  NumLogins                      : 0
+
+  ComputerName                   : localhost
+  UserName                       : DefaultAccount
+  Enabled                        : False
+  Rid                            : 503
+  UserType                       : Guest
+  Comment                        : A user account managed by the system.
+  PwdLastSet                     : <TIMESTAMP>
+  LastLogon                      : <TIMESTAMP>
+  NumLogins                      : 0
+
+  ComputerName                   : localhost
+  UserName                       : Guest
+  Enabled                        : False
+  Rid                            : 501
+  UserType                       : Guest
+  Comment                        : Built-in account for guest access to the computer/domain
+  PwdLastSet                     : <TIMESTAMP>
+  LastLogon                      : <TIMESTAMP>
+  NumLogins                      : 0
+
+  ComputerName                   : localhost
+  UserName                       : localuser
+  Enabled                        : True
+  Rid                            : 1000
+  UserType                       : Administrator
+  Comment                        : LocalUser
+  PwdLastSet                     : <TIMESTAMP>
+  LastLogon                      : <TIMESTAMP>
+  NumLogins                      : 0
+
+  ComputerName                   : localhost
+  UserName                       : testlow
+  Enabled                        : True
+  Rid                            : 1003
+  UserType                       : User
+  Comment                        : 
+  PwdLastSet                     : <TIMESTAMP>
+  LastLogon                      : <TIMESTAMP>
+  NumLogins                      : 0
+
+  ComputerName                   : localhost
+  UserName                       : WDAGUtilityAccount
+  Enabled                        : False
+  Rid                            : 504
+  UserType                       : Guest
+  Comment                        : A user account managed and used by the system for Windows Defender Application Guard scenarios.
+  PwdLastSet                     : <TIMESTAMP>
+  LastLogon                      : <TIMESTAMP>
+  NumLogins                      : 0
+
+[*] Completed collection in <DURATION>
+

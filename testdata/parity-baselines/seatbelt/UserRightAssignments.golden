@@ -1,0 +1,96 @@
+
+
+====== UserRightAssignments ======
+
+SeAssignPrimaryTokenPrivilege:
+    NT AUTHORITY\NETWORK SERVICE
+    NT AUTHORITY\LOCAL SERVICE
+
+SeAuditPrivilege:
+    NT AUTHORITY\NETWORK SERVICE
+    NT AUTHORITY\LOCAL SERVICE
+
+SeBackupPrivilege:
+    BUILTIN\Backup Operators
+    BUILTIN\Administrators
+
+SeBatchLogonRight:
+    BUILTIN\Performance Log Users
+    BUILTIN\Backup Operators
+    BUILTIN\Administrators
+    GOADF97252-GOAD\testlow
+    SEVENKINGDOMS\domainuser
+
+SeCreateSymbolicLinkPrivilege:
+    BUILTIN\Administrators
+
+SeCreateTokenPrivilege:
+SeDebugPrivilege:
+    BUILTIN\Administrators
+
+SeDenyBatchLogonRight:
+SeDenyInteractiveLogonRight:
+    GOADF97252-GOAD\Guest
+
+SeDenyNetworkLogonRight:
+    GOADF97252-GOAD\Guest
+
+SeDenyRemoteInteractiveLogonRight:
+SeDenyServiceLogonRight:
+SeEnableDelegationPrivilege:
+SeImpersonatePrivilege:
+    NT AUTHORITY\SERVICE
+    BUILTIN\Administrators
+    NT AUTHORITY\NETWORK SERVICE
+    NT AUTHORITY\LOCAL SERVICE
+
+SeInteractiveLogonRight:
+    BUILTIN\Backup Operators
+    BUILTIN\Users
+    BUILTIN\Administrators
+    GOADF97252-GOAD\Guest
+
+SeLoadDriverPrivilege:
+    BUILTIN\Administrators
+
+SeNetworkLogonRight:
+    BUILTIN\Backup Operators
+    BUILTIN\Users
+    BUILTIN\Administrators
+    Everyone
+
+SeRelabelPrivilege:
+SeRemoteInteractiveLogonRight:
+    BUILTIN\Remote Desktop Users
+    BUILTIN\Administrators
+
+SeRemoteShutdownPrivilege:
+    BUILTIN\Administrators
+
+SeRestorePrivilege:
+    BUILTIN\Backup Operators
+    BUILTIN\Administrators
+
+SeSecurityPrivilege:
+    BUILTIN\Administrators
+
+SeServiceLogonRight:
+    NT SERVICE\ALL SERVICES
+
+SeShutdownPrivilege:
+    BUILTIN\Backup Operators
+    BUILTIN\Users
+    BUILTIN\Administrators
+
+SeSyncAgentPrivilege:
+SeSystemEnvironmentPrivilege:
+    BUILTIN\Administrators
+
+SeTakeOwnershipPrivilege:
+    BUILTIN\Administrators
+
+SeTcbPrivilege:
+SeTrustedCredManAccessPrivilege:
+
+[*] Completed collection in <DURATION>
+

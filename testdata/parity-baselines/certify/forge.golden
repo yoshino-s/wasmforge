@@ -1,0 +1,21 @@
+
+
+ERROR(S):
+  At least one option from group 'SAN' (upn, dns, email) is required.
+  Required option 'ca-cert' is missing.
+
+  --ca-cert        Required. The CA private key in PFX or P12 format
+  --ca-pass        Password for CA private key
+  --output-path    Path to output certificate
+  --output-pass    Password for output certificate
+  --subject        (Default: CN=User) Target subject name
+  --upn            (Group: SAN) Target subject alternative name (UPN)
+  --dns            (Group: SAN) Target subject alternative name (DNS)
+  --email          (Group: SAN) Target subject alternative name (Email)
+  --sid            Target subject alternative SID
+  --crl            LDAP path to a CRL for certificate
+  --serial         Hardcoded serial number for certificate
+  --out-file       Redirect all output streams to a file (format: FILE-PATH)
+  --quiet          Omit printing the Certify logo
+
+Certify completed in <DURATION>

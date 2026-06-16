@@ -1,0 +1,8 @@
+
+
+====== SysmonEvents ======
+
+Searching Sysmon process creation logs (Sysmon ID 1) for sensitive data.
+
+[*] Completed collection in <DURATION>
+

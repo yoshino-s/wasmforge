@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  WasmForge wmi-harness — NativeAOT trim preservation.
+
+  Tests whether NativeAOT-LLVM preserves getter-only auto-properties for
+  reflection. The current production rdxml.go emits
+  <Assembly Name="..." Dynamic="Required All" />, which our evidence shows
+  does NOT preserve getter-only properties on object-typed auto-properties
+  (the AntiVirusDTO shape). Type-level Dynamic="Required All" — used below —
+  DOES preserve them. See README.md for the full diagnostic chain.
+-->
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Application>
+    <Assembly Name="WmiTest">
+      <Type Name="WmiTest.AntiVirusDTO" Dynamic="Required All" />
+    </Assembly>
+  </Application>
+</Directives>

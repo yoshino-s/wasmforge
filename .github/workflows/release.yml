@@ -1,0 +1,90 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.3'
+          cache-dependency-path: go.sum
+
+      - name: Generate build assets
+        env:
+          GOWORK: 'off'
+        run: go run ./cmd/gen-build-assets
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-assets
+          path: internal/build/build_assets.tar.gz
+
+  build:
+    needs: generate-assets
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - goos: windows
+            goarch: amd64
+            ext: .exe
+          - goos: linux
+            goarch: amd64
+            ext: ''
+          - goos: darwin
+            goarch: amd64
+            ext: ''
+          - goos: darwin
+            goarch: arm64
+            ext: ''
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.3'
+          cache-dependency-path: go.sum
+
+      - name: Download build assets
+        uses: actions/download-artifact@v4
+        with:
+          name: build-assets
+          path: internal/build
+
+      - name: Build
+        env:
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+          CGO_ENABLED: '0'
+          GOWORK: 'off'
+        run: go build -trimpath -o wasmforge-${{ matrix.goos }}-${{ matrix.goarch }}${{ matrix.ext }} ./cmd/wasmforge
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wasmforge-${{ matrix.goos }}-${{ matrix.goarch }}
+          path: wasmforge-${{ matrix.goos }}-${{ matrix.goarch }}${{ matrix.ext }}
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            wasmforge-*
+          generate_release_notes: true

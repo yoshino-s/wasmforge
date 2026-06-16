@@ -1,0 +1,1 @@
+EXCLUDED: same WMI lazy P/Invoke failure. The csharp_patcher rewrites ModifiableServices to use WMI + sc_modifiable, but WMI enumeration itself throws.

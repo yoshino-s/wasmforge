@@ -1,0 +1,128 @@
+//go:build windows
+
+package hostmod
+
+import (
+	"context"
+	"unsafe"
+
+	"github.com/tetratelabs/wazero/api"
+	"golang.org/x/sys/windows"
+)
+
+// shadowVirtualAlloc allocates real host memory via VirtualAlloc and registers
+// a shadow mapping between the given WASM address and the host allocation.
+// The guest has already allocated a []byte in WASM linear memory at wasmAddr;
+// this function creates the corresponding host-side allocation.
+func shadowVirtualAlloc(ctx context.Context, mod api.Module, wasmAddr, size, allocType, protect uint32) uint32 {
+	cfg := getConfig(ctx)
+	if cfg == nil || !cfg.Win32APIs {
+		return errnoENOSYS
+	}
+	sm := getShadowMap(ctx)
+	if sm == nil {
+		return errnoEINVAL
+	}
+	if size == 0 {
+		return errnoEINVAL
+	}
+
+	hostAddr, err := windows.VirtualAlloc(0, uintptr(size), allocType, protect)
+	if err != nil {
+		return win32Errno(err)
+	}
+
+	sm.Register(wasmAddr, hostAddr, size, protect)
+	return errnoSuccess
+}
+
+// shadowVirtualProtect changes the protection on a shadow allocation.
+// It syncs WASM→Host (pre-sync), calls real VirtualProtect, and writes
+// the old protection value to oldProtectPtr.
+//
+// Because the host memory may currently have a non-writable protection
+// (e.g. PAGE_READONLY, PAGE_EXECUTE_READ), we temporarily make it
+// PAGE_READWRITE for the pre-sync copy.
+func shadowVirtualProtect(ctx context.Context, mod api.Module, wasmAddr, size, newProtect, oldProtectPtr uint32) uint32 {
+	cfg := getConfig(ctx)
+	if cfg == nil || !cfg.Win32APIs {
+		return errnoENOSYS
+	}
+	sm := getShadowMap(ctx)
+	if sm == nil {
+		return errnoEINVAL
+	}
+	if size == 0 {
+		return errnoEINVAL
+	}
+
+	entry := sm.Lookup(wasmAddr)
+	if entry == nil {
+		return errnoEBADF
+	}
+
+	if size > entry.size {
+		return errnoEINVAL
+	}
+
+	// Temporarily make host memory writable for the pre-sync copy.
+	// The current protection may not allow writes (e.g. PAGE_READONLY).
+	var tmpOldProtect uint32
+	if entry.protect != windows.PAGE_READWRITE && entry.protect != windows.PAGE_EXECUTE_READWRITE {
+		if err := windows.VirtualProtect(entry.hostAddr, uintptr(entry.size),
+			windows.PAGE_READWRITE, &tmpOldProtect); err != nil {
+			return win32Errno(err)
+		}
+	}
+
+	// Pre-sync: copy WASM → Host.
+	wasmData, ok := readBytes(mod, wasmAddr, entry.size)
+	if !ok {
+		return errnoEFAULT
+	}
+	hostSlice := unsafe.Slice((*byte)(unsafe.Pointer(entry.hostAddr)), entry.size)
+	copy(hostSlice, wasmData)
+
+	// Call real VirtualProtect with the requested new protection.
+	var oldProtect uint32
+	if err := windows.VirtualProtect(entry.hostAddr, uintptr(size), newProtect, &oldProtect); err != nil {
+		return win32Errno(err)
+	}
+
+	// Write the tracked old protection to WASM memory. We use entry.protect
+	// (what the guest last set) rather than oldProtect (which may reflect our
+	// temporary PAGE_READWRITE).
+	if !writeUint32(mod, oldProtectPtr, entry.protect) {
+		return errnoEFAULT
+	}
+
+	// Update the entry's protection.
+	sm.UpdateProtect(wasmAddr, newProtect)
+
+	return errnoSuccess
+}
+
+// shadowVirtualFree releases a shadow allocation. Atomically removes the
+// shadow map entry and frees the real host memory.
+func shadowVirtualFree(ctx context.Context, mod api.Module, wasmAddr, size, freeType uint32) uint32 {
+	cfg := getConfig(ctx)
+	if cfg == nil || !cfg.Win32APIs {
+		return errnoENOSYS
+	}
+	sm := getShadowMap(ctx)
+	if sm == nil {
+		return errnoEINVAL
+	}
+
+	// Atomic lookup+remove to avoid TOCTOU races.
+	entry := sm.Remove(wasmAddr)
+	if entry == nil {
+		return errnoEBADF
+	}
+
+	if err := windows.VirtualFree(entry.hostAddr, 0, windows.MEM_RELEASE); err != nil {
+		return win32Errno(err)
+	}
+
+	return errnoSuccess
+}

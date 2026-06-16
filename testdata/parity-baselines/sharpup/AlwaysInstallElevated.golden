@@ -1,0 +1,8 @@
+
+=== SharpUp: Running Privilege Escalation Checks ===
+
+=== Always Install Elevated ===
+	HKLM: 1
+
+[*] Completed Privesc Checks in <DURATION>
+

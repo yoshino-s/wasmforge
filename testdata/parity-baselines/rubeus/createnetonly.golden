@@ -1,0 +1,20 @@
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  <VERSION>
+[*] Action: Create Process (/netonly)
+
+[*] Using random username and password.
+
+[*] Showing process : True
+[*] Username        : <RANDOM>
+[*] Domain          : <RANDOM>
+[*] Password        : <RANDOM>
+[+] Process         : 'C:\Windows\System32\cmd.exe' successfully created with LOGON_TYPE = 9
+[+] ProcessID       : <PID>
+[+] LUID            : <LUID>

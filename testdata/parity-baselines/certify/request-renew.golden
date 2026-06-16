@@ -1,0 +1,16 @@
+
+
+ERROR(S):
+  Required option 'ca' is missing.
+  Required option 'cert-pfx' is missing.
+
+  --ca            Required. Target certificate authority (format: SERVER\CA-NAME)
+  --cert-pfx      Required. Target certificate to renew
+  --cert-pass     Password for certificate
+  --machine       Request as the machine account
+  --output-pem    Output certificate in PEM format
+  --install       Install certificate in the current store
+  --out-file      Redirect all output streams to a file (format: FILE-PATH)
+  --quiet         Omit printing the Certify logo
+
+Certify completed in <DURATION>

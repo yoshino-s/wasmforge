@@ -1,0 +1,80 @@
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Access Control Assistance Operators
+Comment                        : Members of this group can remotely query authorization attributes and permissions for resources on this computer.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Administrators
+Comment                        : Administrators have complete and unrestricted access to the computer/domain
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Backup Operators
+Comment                        : Backup Operators can override security restrictions for the sole purpose of backing up or restoring files
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Cryptographic Operators
+Comment                        : Members are authorized to perform cryptographic operations.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Device Owners
+Comment                        : Members of this group can change system-wide settings.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Distributed COM Users
+Comment                        : Members are allowed to launch, activate and use Distributed COM objects on this machine.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Event Log Readers
+Comment                        : Members of this group can read event logs from local machine
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Guests
+Comment                        : Guests have the same access as members of the Users group by default, except for the Guest account which is further restricted
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Hyper-V Administrators
+Comment                        : Members of this group have complete and unrestricted access to all features of Hyper-V.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : IIS_IUSRS
+Comment                        : Built-in group used by Internet Information Services.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Network Configuration Operators
+Comment                        : Members in this group can have some administrative privileges to manage configuration of networking features
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Performance Log Users
+Comment                        : Members of this group may schedule logging of performance counters, enable trace providers, and collect event traces both locally and via remote access to this computer
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Performance Monitor Users
+Comment                        : Members of this group can access performance counter data locally and remotely
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Power Users
+Comment                        : Power Users are included for backwards compatibility and possess limited administrative powers
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Remote Desktop Users
+Comment                        : Members in this group are granted the right to logon remotely
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Remote Management Users
+Comment                        : Members of this group can access WMI resources over management protocols (such as WS-Management via the Windows Remote Management service). This applies only to WMI namespaces that grant access to the user.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Replicator
+Comment                        : Supports file replication in a domain
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : System Managed Accounts Group
+Comment                        : Members of this group are managed by the system.
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Users
+Comment                        : Users are prevented from making accidental or intentional system-wide changes and can run most applications
+
+ComputerName                   : GOADF97252-GOAD
+GroupName                      : Netmon Users
+Comment                        : Netmon Users can capture network traffic to and from this computer
+

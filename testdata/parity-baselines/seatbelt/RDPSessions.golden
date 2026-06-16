@@ -1,0 +1,34 @@
+
+
+====== RDPSessions ======
+
+  SessionID                     :  0
+  SessionName                   :  Services
+  UserName                      :  \
+  State                         :  Disconnected
+  HostName                      :  
+  FarmName                      :  
+  LastInput                     :  <DURATION>
+  ClientIP                      :  
+  ClientHostname                :  
+  ClientResolution              :  
+  ClientBuild                   :  0
+  ClientHardwareId              :  0,0,0,0
+  ClientDirectory               :  
+
+  SessionID                     :  1
+  SessionName                   :  Console
+  UserName                      :  \
+  State                         :  Connected
+  HostName                      :  
+  FarmName                      :  
+  LastInput                     :  <DURATION>
+  ClientIP                      :  
+  ClientHostname                :  
+  ClientResolution              :  640x480 @ 2 bits per pixel
+  ClientBuild                   :  0
+  ClientHardwareId              :  0,0,0,0
+  ClientDirectory               :  
+
+[*] Completed collection in <DURATION>
+

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>System.Net.NetworkInformation</RootNamespace>
+    <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!--
+      Replaces the BCL System.Net.NetworkInformation assembly (which throws
+      PlatformNotSupportedException on wasm32) with a minimal managed stub
+      that delegates the bits Seatbelt and friends actually use to the
+      WasmForge host bridge.
+    -->
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Depends on the System.Management stub for the WMI-backed DomainName. -->
+    <ProjectReference Include="..\System.Management\System.Management.csproj" />
+  </ItemGroup>
+</Project>

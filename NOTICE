@@ -1,0 +1,14 @@
+WasmForge
+Copyright 2025-2026 Praetorian Security, Inc.
+
+This product includes software developed at Praetorian Security, Inc.
+(https://www.praetorian.com/).
+
+---
+
+This product bundles a forked copy of wazero (https://wazero.io/),
+originally developed by Tetrate Labs and contributors and licensed under
+the Apache License, Version 2.0. The fork lives in the `wazero/` subtree
+and retains its upstream LICENSE and NOTICE files.
+
+Upstream: https://github.com/tetratelabs/wazero

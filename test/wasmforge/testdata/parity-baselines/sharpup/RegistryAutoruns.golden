@@ -1,0 +1,1 @@
+EXCLUDED: GetRegValues correctly returns planted HKLM\...\Run\WfAutorun, but FileUtils.CheckModifiableAccess uses WindowsIdentity.GetCurrent() which is patched to a static default and never grants ACL match. Fix path: route CheckModifiableAccess through a host bridge that calls AccessCheck against the actual process token.

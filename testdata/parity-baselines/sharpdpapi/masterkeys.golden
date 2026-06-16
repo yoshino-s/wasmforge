@@ -1,0 +1,11 @@
+
+  __                 _   _       _ ___
+ (_  |_   _. ._ ._  | \ |_) /\  |_) |
+ __) | | (_| |  |_) |_/ |  /--\ |  _|_
+                |
+  <VERSION>
+[*] Action: User DPAPI Masterkey File Triage
+
+[X] A /pvk:BASE64 domain DPAPI backup key, /rpc, /password, /ntlm, /credkey, or /hashes must be supplied!
+
+SharpDPAPI completed in <DURATION>

@@ -1,0 +1,45 @@
+# Compiled binaries
+/wasmforge
+*.exe
+*.wasm
+
+# Build cache
+.wasmforge/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude workspace
+.claude/
+docs/plans/
+test/.claude/
+
+# Internal-only mirror (engagement / lab / planning artifacts kept locally,
+# never published). See docs/internals/ for what is intentionally public.
+.praetorian-internal/
+
+# Empty dirs
+template/
+
+# Auto-generated build assets (run 'go generate ./internal/build/' or 'make' to regenerate)
+internal/build/build_assets.tar.gz
+
+# Build artifacts (executables without extension)
+/dotnet-runner
+/gen-ghost-profile
+/seatbelt-wf
+/wasmforge-bin
+/wasmforge-linux
+/darwin_interop
+/gen-build-assets
+/icmpping
+/nested_wasm_compiler
+/test_fdset
+
+# Test ghost profiles (regenerated)
+internal/build/ghost_profiles/*.json

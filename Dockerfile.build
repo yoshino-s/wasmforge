@@ -1,0 +1,95 @@
+# Dockerfile.build — wasmforge .NET (NativeAOT-WASI) build environment.
+#
+# Produces a self-contained image that builds wasmforge from mounted source,
+# stages a target .NET project (e.g. Seatbelt), applies patcher rules, builds
+# the WASI WASM via NativeAOT-LLVM, and forges a Windows PE in one invocation.
+#
+# Mounts at runtime:
+#   /wasmforge     — wasmforge source tree (read-only is fine)
+#   /src           — target .NET project root (e.g. seatbelt-fresh)
+#   /out           — output directory for the forged PE
+#   /cache         — optional named volume for ~/.nuget/packages
+#
+# Usage:
+#   docker build -f Dockerfile.build -t wasmforge/build:latest .
+#   docker run --rm \
+#     -v "$PWD/wasmforge:/wasmforge:ro" \
+#     -v "$PWD/seatbelt-fresh:/src:ro" \
+#     -v "$PWD/out:/out" \
+#     wasmforge/build:latest seatbelt
+
+# Pin to amd64 — WASI SDK 24 ships only x86_64 linux binaries, and the
+# wasmforge build target is GOOS=windows GOARCH=amd64. On Apple silicon
+# hosts Docker Desktop emulates this via Rosetta with acceptable overhead.
+FROM --platform=linux/amd64 debian:bookworm-slim
+
+# ── Base system + signing tools ────────────────────────────────────────
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates curl git make gcc clang \
+        libicu-dev zlib1g \
+        osslsigncode \
+        xz-utils \
+    && rm -rf /var/lib/apt/lists/*
+
+# ── Go toolchain ───────────────────────────────────────────────────────
+ARG GO_VERSION=1.25.3
+RUN curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" \
+        | tar -xz -C /usr/local
+ENV PATH="/usr/local/go/bin:/root/go/bin:${PATH}"
+ENV GOPATH="/root/go"
+
+# ── .NET SDK 10 (RC2 channel — required for NativeAOT-LLVM workload) ──
+# The NativeAOT-LLVM package reference fetches the actual compiler from
+# nuget at restore time; we just need the SDK to drive dotnet publish.
+ENV DOTNET_ROOT="/usr/share/dotnet"
+ENV PATH="${DOTNET_ROOT}:${PATH}"
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
+ENV DOTNET_NOLOGO=1
+RUN curl -fsSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh && \
+    chmod +x /tmp/dotnet-install.sh && \
+    /tmp/dotnet-install.sh --channel 10.0 --quality preview --install-dir "$DOTNET_ROOT" && \
+    rm /tmp/dotnet-install.sh
+
+# ── WASI SDK 24 ────────────────────────────────────────────────────────
+ARG WASI_SDK_VERSION=24
+RUN curl -fsSL \
+        "https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_SDK_VERSION}/wasi-sdk-${WASI_SDK_VERSION}.0-x86_64-linux.tar.gz" \
+        | tar -xz -C /opt && \
+    mv "/opt/wasi-sdk-${WASI_SDK_VERSION}.0-x86_64-linux" /opt/wasi-sdk
+ENV WASI_SDK_PATH=/opt/wasi-sdk
+
+# ── wasm-component-ld wrapper ──────────────────────────────────────────
+# NativeAOT-LLVM 10.0.0-rc1 invokes wasm-component-ld with --component-type
+# which then tries to encode the WASM as a WASI P2 component. Our env
+# imports (mod_load, fs_listdir, etc.) aren't declared in any .wit
+# interface so the encoding fails with "module requires an import
+# interface named `env`". The wrapper sidesteps this by:
+#   - stripping --component-type / --adapt / --wasm-ld-path args
+#   - linking pre-built pthread stubs (libPortableRuntime references
+#     pthread_mutex_lock etc. but NativeAOT-WASI is single-threaded)
+#   - exporting _start and __main_void so wasmtime/wazero can run it
+#
+# Preserve the original as wasm-component-ld.real for parity with how the
+# WASI SDK ships its binaries.
+COPY scripts/wasm-component-ld-wrapper.sh /tmp/wasm-component-ld-wrapper.sh
+COPY dotnet/bridge/pthread_stubs.c /tmp/pthread_stubs.c
+RUN mv "$WASI_SDK_PATH/bin/wasm-component-ld" "$WASI_SDK_PATH/bin/wasm-component-ld.real" && \
+    install -m 0755 /tmp/wasm-component-ld-wrapper.sh "$WASI_SDK_PATH/bin/wasm-component-ld" && \
+    "$WASI_SDK_PATH/bin/clang" --target=wasm32-wasip2 -c /tmp/pthread_stubs.c -o /tmp/pthread_stubs.o && \
+    rm /tmp/wasm-component-ld-wrapper.sh /tmp/pthread_stubs.c
+
+# ── Entry point ────────────────────────────────────────────────────────
+COPY scripts/wasmforge-build.sh /usr/local/bin/wasmforge-build.sh
+RUN chmod +x /usr/local/bin/wasmforge-build.sh
+
+# Pre-create work and out paths so the entrypoint doesn't have to.
+RUN mkdir -p /work /out
+
+WORKDIR /work
+
+# Default entrypoint: build a project. The image can also be used as a
+# generic shell (`docker run --rm -it ... bash`) by overriding entrypoint.
+ENTRYPOINT ["/usr/local/bin/wasmforge-build.sh"]
+
+# Default command shows usage if no arg given.
+CMD ["--help"]

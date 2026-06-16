@@ -1,0 +1,10 @@
+Forest                         : sevenkingdoms.local
+DomainControllers              : {kingslanding.sevenkingdoms.local}
+Children                       : {north.sevenkingdoms.local}
+DomainMode                     : Unknown
+DomainModeLevel                : 7
+PdcRoleOwner                   : kingslanding.sevenkingdoms.local
+RidRoleOwner                   : kingslanding.sevenkingdoms.local
+InfrastructureRoleOwner        : kingslanding.sevenkingdoms.local
+Name                           : sevenkingdoms.local
+

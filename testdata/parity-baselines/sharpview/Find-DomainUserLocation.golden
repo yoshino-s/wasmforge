@@ -1,0 +1,36 @@
+[Find-DomainUserLocation] Querying for all computers in the domain
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainComputer] Get-DomainComputer filter string: (&(samAccountType=805306369))
+[Find-DomainUserLocation] TargetComputers length: 2
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainGroupMember] Get-DomainGroupMember filter string: (&(objectCategory=group)(|(samAccountName=Domain Admins)))
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainObject] Extracted domain 'sevenkingdoms.local' from 'CN=domainadmin,CN=Users,DC=sevenkingdoms,DC=local'
+[Get-DomainSearcher] search base: LDAP://DC=sevenkingdoms,DC=local
+[Get-DomainObject] Get-DomainComputer filter string: (&(|(distinguishedname=CN=domainadmin,CN=Users,DC=sevenkingdoms,DC=local)))
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainObject] Extracted domain 'sevenkingdoms.local' from 'CN=robert.baratheon,OU=Crownlands,DC=sevenkingdoms,DC=local'
+[Get-DomainSearcher] search base: LDAP://DC=sevenkingdoms,DC=local
+[Get-DomainObject] Get-DomainComputer filter string: (&(|(distinguishedname=CN=robert.baratheon,OU=Crownlands,DC=sevenkingdoms,DC=local)))
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainObject] Extracted domain 'sevenkingdoms.local' from 'CN=cersei.lannister,OU=Crownlands,DC=sevenkingdoms,DC=local'
+[Get-DomainSearcher] search base: LDAP://DC=sevenkingdoms,DC=local
+[Get-DomainObject] Get-DomainComputer filter string: (&(|(distinguishedname=CN=cersei.lannister,OU=Crownlands,DC=sevenkingdoms,DC=local)))
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainObject] Extracted domain 'sevenkingdoms.local' from 'CN=Administrator,CN=Users,DC=sevenkingdoms,DC=local'
+[Get-DomainSearcher] search base: LDAP://DC=sevenkingdoms,DC=local
+[Get-DomainObject] Get-DomainComputer filter string: (&(|(distinguishedname=CN=Administrator,CN=Users,DC=sevenkingdoms,DC=local)))
+[Find-DomainUserLocation] TargetUsers length: 4
+[Find-DomainUserLocation] Using threading with threads: 20
+[Find-DomainUserLocation] TargetComputers length: 2
+[Get-NetSession] Error: Access is denied
+[Get-NetLoggedon] Error: Access is denied
+[Get-NetSession] Error: Access is denied
+[Get-NetLoggedon] Error: Access is denied
+

@@ -1,0 +1,1 @@
+EXCLUDED: same Directory.GetFiles gap. Planted Unattend.xml at C:\Windows\Panther\ is invisible to FindFiles. Fix path: route FindFiles through WfFs.ListDirectory.

@@ -1,0 +1,13 @@
+
+
+====== WindowsAutoLogon ======
+
+  DefaultDomainName              : GOADF97252-GOAD
+  DefaultUserName                : WfAutoLogonUser
+  DefaultPassword                : WfAutoLogonP@ss!
+  AltDefaultDomainName           : 
+  AltDefaultUserName             : 
+  AltDefaultPassword             : 
+
+[*] Completed collection in <DURATION>
+

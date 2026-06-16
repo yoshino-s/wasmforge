@@ -1,0 +1,52 @@
+# .dockerignore — keep `docker build -f Dockerfile.build` context lean.
+#
+# We only need:
+#   scripts/wasmforge-build.sh
+# Everything else is mounted at runtime via -v /wasmforge:... so excluding
+# from the build context speeds up `docker build` significantly.
+
+# Build artifacts
+out/
+test/
+testdata/
+
+# Compiled binaries (rebuilt inside container from source)
+wasmforge
+wasmforge.exe
+darwin_interop
+dotnet-runner
+gen-build-assets
+gen-ghost-profile
+
+# Git
+.git
+.github
+
+# Editor / system noise
+.idea
+.vscode
+.DS_Store
+*.swp
+*.swo
+
+# Generated artifacts
+*.tar.gz
+*.zip
+*.so
+*.dylib
+
+# Submodules and vendored deps that are mounted at runtime
+wazero/
+guest/
+
+# Documentation (the entrypoint doesn't need any of it)
+docs/
+
+# Examples
+examples/
+
+# Claude scaffolding
+.claude/
+
+# Go module cache (inside container; not host)
+go.sum

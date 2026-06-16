@@ -1,0 +1,32 @@
+# APIs where pointer-typed parameters are remote process addresses,
+# NOT WASM linear memory pointers. The generator forces these arg
+# bits to 0 in the auto-generated output.
+#
+# Format: ApiName argIndex [argIndex...]
+# (0-based parameter indices)
+#
+# These APIs take LPVOID / LPCVOID parameters that point into a
+# remote process's address space. The type system says "PointerTo(Void)"
+# but they must NOT be translated as WASM pointers.
+
+# Cross-process memory
+VirtualAllocEx 1
+VirtualFreeEx 1
+VirtualProtectEx 1
+VirtualQueryEx 1
+WriteProcessMemory 1
+ReadProcessMemory 1
+
+# Remote thread creation
+CreateRemoteThread 3 4
+CreateRemoteThreadEx 3 4
+
+# Nt* equivalents (if ever added to win32json)
+NtAllocateVirtualMemory 1
+NtFreeVirtualMemory 1
+NtProtectVirtualMemory 1
+NtReadVirtualMemory 1
+NtWriteVirtualMemory 1
+NtMapViewOfSection 4
+NtUnmapViewOfSection 1
+NtCreateThreadEx 6 9

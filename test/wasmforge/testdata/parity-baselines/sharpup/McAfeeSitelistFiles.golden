@@ -1,0 +1,1 @@
+EXCLUDED: same Directory.GetFiles gap. Planted SiteList.xml at C:\ProgramData\McAfee\Common Framework\ is invisible to FindFiles. Fix path: route FindFiles through WfFs.ListDirectory.

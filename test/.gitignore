@@ -1,0 +1,16 @@
+# User-local test config (contains paths, credentials).
+testconfig.toml
+
+# Test assemblies (.NET executables for execute-assembly tests).
+testdata/assemblies/
+
+# Sliver implant source snapshots.
+testdata/sliver-src/
+
+# Tribunus agent source snapshots.
+testdata/tribunus-src/
+
+# Temp files from test runs.
+*.zip
+*.exe
+results.txt

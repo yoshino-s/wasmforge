@@ -1,0 +1,2469 @@
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainUser] filter string: (&(samAccountType=805306368))
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-500}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : <TIMESTAMP>
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : Administrator
+distinguishedname              : CN=Administrator,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : Administrator
+memberof                       : {CN=Group Policy Creator Owners,CN=Users,DC=sevenkingdoms,DC=local, CN=Domain Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Enterprise Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Schema Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Administrators,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {Administrator}
+objectclass                    : {top, person, organizationalPerson, user}
+admincount                     : 1
+badpwdcount                    : 2
+countrycode                    : 0
+usnchanged                     : 1028188
+logoncount                     : 44
+lockouttime                    : 134193749340471337
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+description                    : Built-in account for administering the computer/domain
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+iscriticalsystemobject         : True
+usncreated                     : 8196
+logonhours                     : {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255}
+instancetype                   : 4
+codepage                       : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-501}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, PASSWD_NOTREQD, NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : Guest
+distinguishedname              : CN=Guest,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : Guest
+memberof                       : {CN=Guests,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {Guest}
+objectclass                    : {top, person, organizationalPerson, user}
+iscriticalsystemobject         : True
+badpwdcount                    : 0
+countrycode                    : 0
+usnchanged                     : 8197
+logoncount                     : 0
+primarygroupid                 : 514
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+description                    : Built-in account for guest access to the computer/domain
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+usncreated                     : 8197
+instancetype                   : 4
+codepage                       : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1000}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : <TIMESTAMP>
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : localuser
+distinguishedname              : CN=localuser,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : localuser
+memberof                       : {CN=Users,CN=Builtin,DC=sevenkingdoms,DC=local, CN=Administrators,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {localuser}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : localuser
+admincount                     : 1
+badpwdcount                    : 0
+countrycode                    : 1
+usnchanged                     : 1052770
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 26795
+description                    : LocalUser
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+usncreated                     : 8198
+logonhours                     : {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255}
+instancetype                   : 4
+codepage                       : 1252
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-502}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : krbtgt
+distinguishedname              : CN=krbtgt,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : krbtgt
+memberof                       : {CN=Denied RODC Password Replication Group,CN=Users,DC=sevenkingdoms,DC=local}
+cn                             : {krbtgt}
+objectclass                    : {top, person, organizationalPerson, user}
+ServicePrincipalName           : kadmin/changepw
+msds-supportedencryptiontypes  : 0
+admincount                     : 1
+badpwdcount                    : 0
+countrycode                    : 0
+usnchanged                     : 102428
+logoncount                     : 0
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+description                    : Key Distribution Center Service Account
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+iscriticalsystemobject         : True
+usncreated                     : 12324
+showinadvancedviewonly         : True
+instancetype                   : 4
+codepage                       : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1113}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : tywin.lannister
+distinguishedname              : CN=tywin.lannister,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : tywin.lannister
+memberof                       : {CN=Lannister,OU=Westerlands,DC=sevenkingdoms,DC=local}
+cn                             : {tywin.lannister}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : tywin.lannister
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-tywin.lann
+msexcharchivequota             : 104857600
+givenname                      : Tywin
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+managedobjects                 : CN=Lannister,OU=Westerlands,DC=sevenkingdoms,DC=local
+countrycode                    : 0
+l                              : Casterly Rock
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102226
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16654
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:89946526647837, lastNameFirstName:5264783789946, firstNameLastName:8994652647837}
+msexchmailboxguid              : {87, 201, 135, 26, 253, 255, 47, 75, 148, 49, 125, 126, 110, 97, 149, 61}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : tywin.lannister
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:tywin.lannister@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Tywin Lanister
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : tywin.lannister@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Lanister
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1114}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : jaime.lannister
+distinguishedname              : CN=jaime.lannister,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : jaime.lannister
+memberof                       : {CN=Lannister,OU=Westerlands,DC=sevenkingdoms,DC=local}
+cn                             : {jaime.lannister}
+objectclass                    : {top, person, organizationalPerson, user}
+ServicePrincipalName           : MSSQLSvc/sql01.sevenkingdoms.local:1433
+displayname                    : jaime.lannister
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-jaime.lann
+msexcharchivequota             : 104857600
+givenname                      : Jaime
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 1093732
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16684
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:52463526647837, lastNameFirstName:5264783752463, firstNameLastName:5246352647837}
+msexchmailboxguid              : {73, 222, 66, 151, 187, 108, 76, 78, 180, 182, 40, 137, 204, 90, 180, 144}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : jaime.lannister
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:jaime.lannister@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Jaime Lanister
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : jaime.lannister@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+mdbusedefaults                 : True
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Lanister
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1115}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : cersei.lannister
+distinguishedname              : CN=cersei.lannister,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : cersei.lannister
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local, CN=Baratheon,OU=Stormlands,DC=sevenkingdoms,DC=local, CN=Lannister,OU=Westerlands,DC=sevenkingdoms,DC=local, CN=Domain Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Administrators,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {cersei.lannister}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : cersei.lannister
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-cersei.lan
+msexcharchivequota             : 104857600
+givenname                      : Cersei
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 974987
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16711
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:237734526647837, lastNameFirstName:52647837237734, firstNameLastName:23773452647837}
+msexchmailboxguid              : {92, 8, 148, 54, 69, 175, 12, 69, 148, 118, 211, 78, 82, 118, 118, 130}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : cersei.lannister
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 12
+proxyaddresses                 : SMTP:cersei.lannister@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Cersei Lanister
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 2
+msexchrecipienttypedetails     : 1
+mail                           : cersei.lannister@sevenkingdoms.local
+admincount                     : 1
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Lanister
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1116}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : tyron.lannister
+distinguishedname              : CN=tyron.lannister,OU=Westerlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : tyron.lannister
+memberof                       : {CN=Lannister,OU=Westerlands,DC=sevenkingdoms,DC=local}
+cn                             : {tyron.lannister}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : tyron.lannister
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-tyron.lann
+msexcharchivequota             : 104857600
+givenname                      : Tyron
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102232
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16746
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:89766526647837, lastNameFirstName:5264783789766, firstNameLastName:8976652647837}
+msexchmailboxguid              : {170, 80, 139, 254, 90, 1, 78, 71, 171, 199, 203, 147, 190, 226, 199, 84}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : tyron.lannister
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:tyron.lannister@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Tyron Lanister
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : tyron.lannister@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Lanister
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1117}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : robert.baratheon
+distinguishedname              : CN=robert.baratheon,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : robert.baratheon
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local, CN=Baratheon,OU=Stormlands,DC=sevenkingdoms,DC=local, CN=Protected Users,CN=Users,DC=sevenkingdoms,DC=local, CN=Domain Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Administrators,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {robert.baratheon}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : robert.baratheon
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-robert.bar
+msexcharchivequota             : 104857600
+givenname                      : Robert
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+managedobjects                 : CN=Baratheon,OU=Stormlands,DC=sevenkingdoms,DC=local
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 974988
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16772
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:762378227284366, lastNameFirstName:227284366762378, firstNameLastName:762378227284366}
+msexchmailboxguid              : {99, 34, 108, 246, 148, 23, 137, 74, 148, 85, 169, 225, 24, 94, 254, 96}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : robert.baratheon
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 12
+proxyaddresses                 : SMTP:robert.baratheon@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Robert Lanister
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 1
+msexchrecipienttypedetails     : 1
+mail                           : robert.baratheon@sevenkingdoms.local
+admincount                     : 1
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Baratheon
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1118}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : joffrey.baratheon
+distinguishedname              : CN=joffrey.baratheon,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : joffrey.baratheon
+memberof                       : {CN=Baratheon,OU=Stormlands,DC=sevenkingdoms,DC=local, CN=Lannister,OU=Westerlands,DC=sevenkingdoms,DC=local}
+cn                             : {joffrey.baratheon}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : joffrey.baratheon
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-joffrey.ba
+msexcharchivequota             : 104857600
+givenname                      : Joffrey
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102237
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16802
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:5633739227284366, lastNameFirstName:2272843665633739, firstNameLastName:5633739227284366}
+msexchmailboxguid              : {23, 105, 245, 65, 227, 37, 218, 66, 164, 146, 193, 111, 185, 136, 251, 30}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : joffrey.baratheon
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:joffrey.baratheon@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Joffrey Baratheon
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : joffrey.baratheon@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Baratheon
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1119}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD, NOT_DELEGATED
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : renly.baratheon
+distinguishedname              : CN=renly.baratheon,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : renly.baratheon
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local, CN=Baratheon,OU=Stormlands,DC=sevenkingdoms,DC=local}
+cn                             : {renly.baratheon}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : renly.baratheon
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-renly.bara
+msexcharchivequota             : 104857600
+givenname                      : Renly
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102238
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16831
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:73659227284366, lastNameFirstName:22728436673659, firstNameLastName:73659227284366}
+msexchmailboxguid              : {245, 147, 18, 253, 228, 16, 225, 68, 160, 156, 61, 105, 10, 71, 57, 62}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : renly.baratheon
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:renly.baratheon@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Renly Baratheon
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : renly.baratheon@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Baratheon
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1120}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : stannis.baratheon
+distinguishedname              : CN=stannis.baratheon,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : stannis.baratheon
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local, CN=Baratheon,OU=Stormlands,DC=sevenkingdoms,DC=local}
+cn                             : {stannis.baratheon}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : stannis.baratheon
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-stannis.ba
+msexcharchivequota             : 104857600
+givenname                      : Stannis
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102240
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16861
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:7826647227284366, lastNameFirstName:2272843667826647, firstNameLastName:7826647227284366}
+msexchmailboxguid              : {31, 15, 216, 254, 239, 248, 69, 75, 166, 10, 228, 183, 80, 55, 245, 125}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : stannis.baratheon
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:stannis.baratheon@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Stannis Baratheon
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : stannis.baratheon@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Baratheon
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1121}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : petyer.baelish
+distinguishedname              : CN=petyer.baelish,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : petyer.baelish
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local}
+cn                             : {petyer.baelish}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : petyer.baelish
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-petyer.bae
+msexcharchivequota             : 104857600
+givenname                      : Petyer
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102244
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16890
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:7389372235474, lastNameFirstName:2235474738937, firstNameLastName:7389372235474}
+msexchmailboxguid              : {200, 67, 65, 107, 95, 89, 143, 70, 128, 156, 185, 77, 72, 207, 148, 59}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : petyer.baelish
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:petyer.baelish@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Petyer Baelish
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : petyer.baelish@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Baelish
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1122}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : lord.varys
+distinguishedname              : CN=lord.varys,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : lord.varys
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local}
+cn                             : {lord.varys}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : lord.varys
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-lord.varys
+msexcharchivequota             : 104857600
+givenname                      : Lord
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102245
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16916
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:567382797, lastNameFirstName:827975673, firstNameLastName:567382797}
+msexchmailboxguid              : {19, 216, 204, 33, 185, 29, 112, 75, 185, 70, 17, 172, 59, 175, 98, 8}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : lord.varys
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:lord.varys@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Lord Varys
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : lord.varys@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Varys
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1123}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : maester.pycelle
+distinguishedname              : CN=maester.pycelle,OU=Crownlands,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : maester.pycelle
+memberof                       : {CN=Small Council,OU=Crownlands,DC=sevenkingdoms,DC=local}
+cn                             : {maester.pycelle}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : maester.pycelle
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-maester.py
+msexcharchivequota             : 104857600
+givenname                      : Maester
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+l                              : King's Landing
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 102246
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 16937
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:62378377923553, lastNameFirstName:79235536237837, firstNameLastName:62378377923553}
+msexchmailboxguid              : {200, 147, 172, 32, 167, 164, 140, 66, 152, 217, 240, 247, 218, 166, 157, 44}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : maester.pycelle
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 0
+proxyaddresses                 : SMTP:maester.pycelle@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+description                    : Maester Pycelle
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+mdbusedefaults                 : True
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : maester.pycelle@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Pycelle
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1124}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : domainuser
+distinguishedname              : CN=domainuser,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : domainuser
+memberof                       : {CN=Remote Desktop Users,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {domainuser}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : domainuser
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-domainuser
+msexcharchivequota             : 104857600
+givenname                      : Domain
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+msexchmailboxguid              : {175, 113, 96, 200, 155, 172, 129, 68, 170, 205, 59, 54, 103, 129, 230, 210}
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 1167492
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 22129
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:3662468737, lastNameFirstName:8737366246, firstNameLastName:3662468737}
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : domainuser
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+lockouttime                    : 0
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 305
+proxyaddresses                 : SMTP:domainuser@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>}
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+mail                           : domainuser@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchuserculture              : en-US
+mdbusedefaults                 : True
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+instancetype                   : 4
+codepage                       : 0
+sn                             : User
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1125}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : domainadmin
+distinguishedname              : CN=domainadmin,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : domainadmin
+memberof                       : {CN=Organization Management,OU=Microsoft Exchange Security Groups,DC=sevenkingdoms,DC=local, CN=Group Policy Creator Owners,CN=Users,DC=sevenkingdoms,DC=local, CN=Domain Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Enterprise Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Schema Admins,CN=Users,DC=sevenkingdoms,DC=local, CN=Remote Desktop Users,CN=Builtin,DC=sevenkingdoms,DC=local}
+cn                             : {domainadmin}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : domainadmin
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-domainadmi
+msexcharchivequota             : 104857600
+givenname                      : Domain
+showinaddressbook              : {CN=Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Default Global Address List,CN=All Global Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Users,CN=All Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchelcmailboxflags          : 130
+countrycode                    : 0
+msexchmailboxguid              : {148, 125, 250, 221, 79, 204, 20, 65, 186, 90, 247, 34, 203, 173, 147, 189}
+msexchcalendarloggingquota     : 6291456
+usnchanged                     : 1069129
+msexcharchivewarnquota         : 94371840
+msexchversion                  : 88218628259840
+usncreated                     : 22146
+msexchuseraccountcontrol       : 0
+msexchumdtmfmap                : {emailAddress:36624623646, lastNameFirstName:23646366246, firstNameLastName:36624623646}
+protocolsettings               : RemotePowerShell1
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+mailnickname                   : domainadmin
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+instancetype                   : 4
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 290
+proxyaddresses                 : SMTP:domainadmin@sevenkingdoms.local
+msexchdumpsterquota            : 31457280
+admincount                     : 1
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+badpwdcount                    : 0
+msexchrecipienttypedetails     : 1
+userprincipalname              : domainadmin@sevenkingdoms.local
+mail                           : domainadmin@sevenkingdoms.local
+msexchrecipientdisplaytype     : 1073741824
+msexchwhenmailboxcreated       : <TIMESTAMP>
+mdbusedefaults                 : True
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchdumpsterwarningquota     : 20971520
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchuserculture              : en-US
+codepage                       : 0
+sn                             : Admin
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1146}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, PASSWD_NOTREQD, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : Exchange Online-ApplicationAccount
+distinguishedname              : CN=Exchange Online-ApplicationAccount,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : $Q31000-IH3I6V1UPGG4
+cn                             : {Exchange Online-ApplicationAccount}
+objectclass                    : {top, person, organizationalPerson, user}
+msexchgroupsecurityflags       : 0
+msexchmailboxfolderset         : 0
+msexchumenabledflags2          : -1
+msexchrecipientsoftdeleteds... : 0
+msexchmailboxauditenable       : False
+badpwdcount                    : 0
+garbagecollperiod              : 1209600
+countrycode                    : 0
+msexchmdbrulesquota            : 256
+usnchanged                     : 100261
+msexchversion                  : 1130555651391488
+msexchmoderationflags          : 6
+logoncount                     : 0
+internetencoding               : 0
+msexchtransportrecipientset... : 0
+msexchuserbl                   : {CN=MeetingGraphApplication-Exchange Online-ApplicationAccount,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=MailboxSearchApplication-Exchange Online-ApplicationAccount,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=TeamMailboxLifecycleApplication-Exchange Online-ApplicationAccou,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=Mailbox Search-Exchange Online-ApplicationAccount,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=LegalHoldApplication-Exchange Online-ApplicationAccount,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=ArchiveApplication-Exchange Online-ApplicationAccount,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=UserApplication-Exchange Online-ApplicationAccount,CN=Role Assignments,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchprovisioningflags        : 0
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+userprincipalname              : Exchange_Online-ApplicationAccount@sevenkingdoms.local
+msexchuseraccountcontrol       : 0
+msexchaddressbookflags         : 1
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>}
+msexchmailboxauditlogagelimit  : 7776000
+usncreated                     : 100260
+msexchrecipienttypedetails     : 33554432
+msexchrecipientdisplaytype     : 12
+msexchbypassaudit              : False
+instancetype                   : 4
+codepage                       : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1147}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : SystemMailbox{<GUID>}
+distinguishedname              : CN=SystemMailbox{<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_50e299ed57b443988
+cn                             : {SystemMailbox{<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Microsoft Exchange Approval Assistant
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=ArbitrationMailbox,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101601
+usncreated                     : 100354
+msexchumdtmfmap                : {emailAddress:797836624526913052927211243398739633223323092, lastNameFirstName:6739242777682513052927323243292203259333256342, firstNameLastName:6739242777682513052927323243292203259333256342}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+msexchrequireauthtosendto      : True
+userprincipalname              : SystemMailbox{<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchapprovalapplicationlink  : {CN=ModeratedRecipients,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=AutoGroup,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 130
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {36, 226, 250, 140, 236, 224, 70, 79, 188, 202, 91, 224, 83, 166, 112, 250}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-SystemMail
+mailnickname                   : SystemMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : SystemMailbox{<GUID>}@sevenkingdoms.local
+mdbusedefaults                 : False
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : MSExchApproval <GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1148}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : SystemMailbox{<GUID>}
+distinguishedname              : CN=SystemMailbox{<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_79bb50b1d7b143798
+cn                             : {SystemMailbox{<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Microsoft Exchange
+msexchumenabledflags2          : -1
+submissioncontlength           : 1048576
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=ArbitrationMailbox,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101923
+usncreated                     : 100359
+msexchumdtmfmap                : {emailAddress:797836624526922558235973142298337353741329282, lastNameFirstName:797836624526922558235973142298337353741329282, firstNameLastName:797836624526922558235973142298337353741329282}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchcapabilityidentifiers    : {52, 51, 47, 44, 43, 42, 40}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+msexchrequireauthtosendto      : True
+userprincipalname              : SystemMailbox{<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchapprovalapplicationlink  : {CN=ModeratedRecipients,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=AutoGroup,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchoabgeneratingmailboxbl   : CN=Default Offline Address Book,CN=Offline Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 130
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {210, 152, 68, 197, 127, 189, 61, 75, 169, 77, 121, 243, 68, 160, 94, 41}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-SystemMail
+mailnickname                   : SystemMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : SystemMailbox{<GUID>}@sevenkingdoms.local
+mdbusedefaults                 : False
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : SystemMailbox <GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1149}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : SystemMailbox{<GUID>}
+distinguishedname              : CN=SystemMailbox{<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_7ca848fed6a948719
+cn                             : {SystemMailbox{<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Microsoft Exchange
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=ArbitrationMailbox,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101618
+usncreated                     : 100364
+msexchumdtmfmap                : {emailAddress:797836624526930321229892340342678362293823339, lastNameFirstName:67392434726837930321229892340342678362293823339, firstNameLastName:67392434726837930321229892340342678362293823339}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchcapabilityidentifiers    : 41
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+msexchrequireauthtosendto      : True
+userprincipalname              : SystemMailbox{<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 2
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {75, 144, 232, 34, 211, 97, 233, 68, 171, 137, 238, 71, 218, 112, 33, 20}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-SystemMail
+mailnickname                   : SystemMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : SystemMailbox{<GUID>}@sevenkingdoms.local
+mdbusedefaults                 : False
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : MsExchDiscovery <GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1150}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : DiscoverySearchMailbox {<GUID>}
+distinguishedname              : CN=DiscoverySearchMailbox {<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_6843aa91c38d48668
+cn                             : {DiscoverySearchMailbox {<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Discovery Search Mailbox
+msexchumenabledflags2          : -1
+submissioncontlength           : 102400
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchuseraccountcontrol       : 2
+usnchanged                     : 102253
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+authorig                       : CN=DiscoverySearchMailbox {<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+usncreated                     : 100369
+msexchumdtmfmap                : {emailAddress:347268379732724624526939192205462641538023730933422852, lastNameFirstName:673924347268379624526939192205462641538023730933422852, firstNameLastName:673924347268379624526939192205462641538023730933422852}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 536870912
+mdboverhardquotalimit          : 52428800
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : DiscoverySearchMailbox {<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+authorigbl                     : CN=DiscoverySearchMailbox {<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 134
+msexchhidefromaddresslists     : True
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+mdboverquotalimit              : 52428800
+msexchmailboxguid              : {242, 113, 161, 107, 210, 18, 189, 73, 160, 63, 133, 24, 242, 144, 139, 82}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-DiscoveryS
+mailnickname                   : DiscoverySearchMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+delivcontlength                : 102400
+showinaddressbook              : {CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+proxyaddresses                 : SMTP:DiscoverySearchMailbox{<GUID>}@sevenkingdoms.local
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexchuserculture              : en-US
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : DiscoverySearchMailbox{<GUID>}@sevenkingdoms.local
+mdbusedefaults                 : False
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 140, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 64, 0, 2, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 0, 2, 36, 0, 1, 0, 0, 0, 1, 5, 0, 0, 0, 0, 0, 5, 21, 0, 0, 0, 28, 138, 155, 240, 102, 225, 106, 200, 235, 175, 131, 204, 110, 4, 0, 0}
+codepage                       : 0
+sn                             : MsExchDiscoveryMailbox <GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1151}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : Migration.<GUID>
+distinguishedname              : CN=Migration.<GUID>,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_25cfacf0dc404eeca
+cn                             : {Migration.<GUID>}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Microsoft Exchange Migration
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101632
+usncreated                     : 100374
+msexchumdtmfmap                : {emailAddress:64472846683337716201143349621222623229136, lastNameFirstName:64472846683337716201143349621222623229136, firstNameLastName:64472846683337716201143349621222623229136}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+mdboverhardquotalimit          : 307200
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchcapabilityidentifiers    : 48
+mdbstoragequota                : 153600
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+msexchrequireauthtosendto      : True
+userprincipalname              : Migration.<GUID>@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 130
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+mdboverquotalimit              : 307200
+msexchmailboxguid              : {234, 177, 174, 239, 19, 64, 160, 74, 154, 16, 49, 223, 208, 62, 231, 198}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-Migration.
+mailnickname                   : Migration.<GUID>
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:Migration.<GUID>@sevenkingdoms.local
+msexchmessagehygienesclquar... : 9
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmessagehygienesclreje... : 7
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : Migration.<GUID>@sevenkingdoms.local
+msexchmessagehygienescljunk... : 4
+mdbusedefaults                 : False
+msexchmessagehygienescldele... : 9
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : Migration.<GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1152}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : FederatedEmail.<GUID>
+distinguishedname              : CN=FederatedEmail.<GUID>,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_dd27e565ea454d83b
+cn                             : {FederatedEmail.<GUID>}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Microsoft Exchange Federation Mailbox
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101637
+usncreated                     : 100379
+msexchumdtmfmap                : {emailAddress:3333728333624542134382817941489323002953213042, lastNameFirstName:3333728333624542134382817941489323002953213042, firstNameLastName:3333728333624542134382817941489323002953213042}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+mdboverhardquotalimit          : 1024
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchrmscomputeraccountslink  : CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+mdbstoragequota                : 1024
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : FederatedEmail.<GUID>@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 130
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+mdboverquotalimit              : 1024
+msexchmailboxguid              : {234, 130, 56, 114, 71, 213, 102, 71, 145, 5, 46, 223, 173, 158, 170, 42}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-FederatedE
+mailnickname                   : FederatedEmail.<GUID>
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:FederatedEmail.<GUID>@sevenkingdoms.local
+msexchmessagehygienesclquar... : 9
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmessagehygienesclreje... : 7
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : FederatedEmail.<GUID>@sevenkingdoms.local
+msexchmessagehygienescljunk... : 4
+mdbusedefaults                 : False
+msexchmessagehygienescldele... : 9
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : FederatedEmail.<GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1153}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : SystemMailbox{<GUID>}
+distinguishedname              : CN=SystemMailbox{<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_aefcc3d473484f088
+cn                             : {SystemMailbox{<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : E4E Encryption Store - Active
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=ArbitrationMailbox,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101646
+usncreated                     : 100384
+msexchumdtmfmap                : {emailAddress:797836624526930340920239247209233222869203201, lastNameFirstName:797836624526930340920239247209233222869203201, firstNameLastName:797836624526930340920239247209233222869203201}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : SystemMailbox{<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchapprovalapplicationlink  : {CN=ModeratedRecipients,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=AutoGroup,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 130
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {180, 130, 159, 56, 184, 187, 248, 71, 169, 95, 127, 82, 194, 113, 140, 59}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-SystemMail
+mailnickname                   : SystemMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchmessagehygienesclquar... : 9
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmessagehygienesclreje... : 7
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchmessagehygienescljunk... : 4
+mdbusedefaults                 : False
+msexchmessagehygienescldele... : 9
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : SystemMailbox{<GUID>}
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1154}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : SystemMailbox{<GUID>}
+distinguishedname              : CN=SystemMailbox{<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_ed69e64e778b4d40b
+cn                             : {SystemMailbox{<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : Microsoft Exchange
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=ArbitrationMailbox,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101654
+usncreated                     : 100389
+msexchumdtmfmap                : {emailAddress:797836624526922334405312345538937272732720322, lastNameFirstName:797836624526922334405312345538937272732720322, firstNameLastName:797836624526922334405312345538937272732720322}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 8388608
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchcapabilityidentifiers    : 66
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : SystemMailbox{<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchapprovalapplicationlink  : {CN=ModeratedRecipients,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local, CN=AutoGroup,CN=Approval Applications,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local}
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchrecipientdisplaytype     : 10
+msexchhidefromaddresslists     : True
+msexchelcmailboxflags          : 130
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {177, 19, 156, 158, 53, 21, 150, 65, 162, 180, 182, 48, 141, 49, 200, 64}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-SystemMail
+mailnickname                   : SystemMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchmessagehygienesclquar... : 9
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmessagehygienesclreje... : 7
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchmessagehygienescljunk... : 4
+mdbusedefaults                 : False
+msexchmessagehygienescldele... : 9
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 5, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : SystemMailbox{<GUID>}
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1155}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : ACCOUNTDISABLE, NORMAL_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : SystemMailbox{<GUID>}
+distinguishedname              : CN=SystemMailbox{<GUID>},CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : SM_fec41f96570c4729b
+cn                             : {SystemMailbox{<GUID>}}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : SystemMailbox{<GUID>}
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchuseraccountcontrol       : 2
+usnchanged                     : 101658
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 100397
+msexchumdtmfmap                : {emailAddress:797836624526982237033822242282926229423064129, lastNameFirstName:797836624526982237033822242282926229423064129, firstNameLastName:797836624526982237033822242282926229423064129}
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+msexchrecipienttypedetails     : 4398046511104
+mdboverhardquotalimit          : 52428800
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 52428800
+userprincipalname              : SystemMailbox{<GUID>}@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchmailboxauditlogagelimit  : 7776000
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 134
+msexchhidefromaddresslists     : True
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+mdboverquotalimit              : 52428800
+msexchmailboxguid              : {103, 152, 48, 173, 66, 212, 51, 72, 142, 185, 63, 170, 250, 101, 163, 94}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-SystemMail
+mailnickname                   : SystemMailbox{<GUID>}
+msexchgroupsecurityflags       : 0
+proxyaddresses                 : SMTP:SystemMailbox{<GUID>}@sevenkingdoms.local
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 6
+msexchmasteraccountsid         : {1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+msexchcalendarloggingquota     : 6291456
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 1126140425011200
+mail                           : SystemMailbox{<GUID>}@sevenkingdoms.local
+mdbusedefaults                 : False
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+sn                             : SystemMailbox <GUID>
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1158}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee
+distinguishedname              : CN=HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailboxb52f0f5
+cn                             : {HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-001
+msexchumenabledflags2          : -1
+msexchmobilemailboxflags       : 1
+logoncount                     : 404
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 1216670
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102007
+msexchumdtmfmap                : {emailAddress:432584624526925230352373343802463362463852233, lastNameFirstName:4325846245269546475263464001, firstNameLastName:4325846245269546475263464001}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {252, 80, 71, 244, 171, 247, 129, 73, 130, 230, 75, 45, 18, 213, 140, 225}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {108, 216, 196, 225, 6, 164, 32, 65, 138, 226, 207, 225, 213, 252, 168, 33}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-001
+proxyaddresses                 : {SMTP:HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee@sevenkingdoms.local, SIP:HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailboxb52f0f5ad73f4f80b46df6a46e85bcee@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexchmailboxfolderset         : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1159}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox3f6a5175adad4da5b499b1379e48f6f6
+distinguishedname              : CN=HealthMailbox3f6a5175adad4da5b499b1379e48f6f6,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox3f6a517
+cn                             : {HealthMailbox3f6a5175adad4da5b499b1379e48f6f6}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-002
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102046
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102030
+msexchumdtmfmap                : {emailAddress:432584624526933625175232343252499213793483636, lastNameFirstName:4325846245269546475263464002, firstNameLastName:4325846245269546475263464002}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {96, 196, 6, 95, 88, 221, 1, 77, 142, 26, 218, 130, 155, 158, 31, 74}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox3f6a5175adad4da5b499b1379e48f6f6@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {20, 227, 162, 55, 47, 192, 49, 67, 161, 92, 251, 1, 124, 128, 235, 22}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox3f6a5175adad4da5b499b1379e48f6f6
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-002
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailbox3f6a5175adad4da5b499b1379e48f6f6@sevenkingdoms.local, SIP:HealthMailbox3f6a5175adad4da5b499b1379e48f6f6@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox3f6a5175adad4da5b499b1379e48f6f6@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1160}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailboxeded66d1bbf64fb1952a4fc76193a847
+distinguishedname              : CN=HealthMailboxeded66d1bbf64fb1952a4fc76193a847,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailboxeded66d
+cn                             : {HealthMailboxeded66d1bbf64fb1952a4fc76193a847}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-003
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102058
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102041
+msexchumdtmfmap                : {emailAddress:432584624526933336631223643219522432761932847, lastNameFirstName:4325846245269546475263464003, firstNameLastName:4325846245269546475263464003}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {205, 6, 119, 70, 20, 155, 243, 65, 173, 105, 55, 25, 43, 69, 149, 183}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailboxeded66d1bbf64fb1952a4fc76193a847@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {0, 214, 69, 167, 138, 35, 14, 64, 132, 162, 129, 183, 140, 110, 230, 207}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailboxeded66d1bbf64fb1952a4fc76193a847
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-003
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailboxeded66d1bbf64fb1952a4fc76193a847@sevenkingdoms.local, SIP:HealthMailboxeded66d1bbf64fb1952a4fc76193a847@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailboxeded66d1bbf64fb1952a4fc76193a847@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1161}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox5aeab3370fa049238a12e4995a473627
+distinguishedname              : CN=HealthMailbox5aeab3370fa049238a12e4995a473627,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox5aeab33
+cn                             : {HealthMailbox5aeab3370fa049238a12e4995a473627}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-004
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102070
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102053
+msexchumdtmfmap                : {emailAddress:432584624526952322337032049238212349952473627, lastNameFirstName:4325846245269546475263464004, firstNameLastName:4325846245269546475263464004}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {186, 253, 197, 97, 229, 26, 23, 64, 133, 43, 201, 58, 83, 134, 43, 103}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox5aeab3370fa049238a12e4995a473627@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {151, 129, 246, 252, 125, 51, 89, 76, 169, 173, 27, 76, 53, 50, 225, 82}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox5aeab3370fa049238a12e4995a473627
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-004
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailbox5aeab3370fa049238a12e4995a473627@sevenkingdoms.local, SIP:HealthMailbox5aeab3370fa049238a12e4995a473627@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox5aeab3370fa049238a12e4995a473627@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1162}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailboxe0aa134eb4b24a50971db1895101eb16
+distinguishedname              : CN=HealthMailboxe0aa134eb4b24a50971db1895101eb16,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailboxe0aa134
+cn                             : {HealthMailboxe0aa134eb4b24a50971db1895101eb16}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-005
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102104
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102065
+msexchumdtmfmap                : {emailAddress:432584624526930221343242242509713218951013216, lastNameFirstName:4325846245269546475263464005, firstNameLastName:4325846245269546475263464005}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {212, 193, 149, 243, 219, 175, 198, 77, 187, 122, 94, 55, 153, 212, 6, 182}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailboxe0aa134eb4b24a50971db1895101eb16@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {70, 22, 19, 163, 209, 198, 178, 73, 172, 30, 50, 231, 169, 28, 36, 98}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailboxe0aa134eb4b24a50971db1895101eb16
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-005
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailboxe0aa134eb4b24a50971db1895101eb16@sevenkingdoms.local, SIP:HealthMailboxe0aa134eb4b24a50971db1895101eb16@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailboxe0aa134eb4b24a50971db1895101eb16@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1163}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox806bebd3240042b4b657bac76c2644bd
+distinguishedname              : CN=HealthMailbox806bebd3240042b4b657bac76c2644bd,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox806bebd
+cn                             : {HealthMailbox806bebd3240042b4b657bac76c2644bd}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-006
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102224
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102099
+msexchumdtmfmap                : {emailAddress:432584624526980623233240042242657222762264423, lastNameFirstName:4325846245269546475263464006, firstNameLastName:4325846245269546475263464006}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {123, 84, 125, 95, 100, 73, 80, 70, 129, 159, 106, 8, 216, 64, 146, 253}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox806bebd3240042b4b657bac76c2644bd@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {67, 71, 54, 213, 42, 156, 107, 71, 153, 56, 197, 165, 16, 212, 67, 193}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox806bebd3240042b4b657bac76c2644bd
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-006
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailbox806bebd3240042b4b657bac76c2644bd@sevenkingdoms.local, SIP:HealthMailbox806bebd3240042b4b657bac76c2644bd@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox806bebd3240042b4b657bac76c2644bd@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1164}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a
+distinguishedname              : CN=HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox4061abd
+cn                             : {HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-007
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102266
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102219
+msexchumdtmfmap                : {emailAddress:432584624526940612232533540412473291325363382, lastNameFirstName:4325846245269546475263464007, firstNameLastName:4325846245269546475263464007}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {145, 57, 233, 176, 189, 158, 154, 67, 145, 128, 120, 180, 102, 175, 234, 70}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {174, 138, 48, 1, 192, 146, 252, 73, 129, 4, 37, 220, 230, 254, 2, 209}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-007
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a@sevenkingdoms.local, SIP:HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox4061abdb5dd54041a47eb91fa5f6de8a@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1165}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailboxf08665424bbb48088823811b77f7234f
+distinguishedname              : CN=HealthMailboxf08665424bbb48088823811b77f7234f,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailboxf086654
+cn                             : {HealthMailboxf08665424bbb48088823811b77f7234f}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-008
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102294
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102261
+msexchumdtmfmap                : {emailAddress:432584624526930866542422248088823811277372343, lastNameFirstName:4325846245269546475263464008, firstNameLastName:4325846245269546475263464008}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {85, 48, 166, 76, 126, 74, 79, 72, 142, 165, 228, 250, 184, 193, 3, 171}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailboxf08665424bbb48088823811b77f7234f@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {240, 196, 70, 50, 129, 106, 145, 71, 153, 142, 25, 127, 145, 86, 158, 219}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailboxf08665424bbb48088823811b77f7234f
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-008
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailboxf08665424bbb48088823811b77f7234f@sevenkingdoms.local, SIP:HealthMailboxf08665424bbb48088823811b77f7234f@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailboxf08665424bbb48088823811b77f7234f@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1166}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox1a85062499204a57b86318523702c48f
+distinguishedname              : CN=HealthMailbox1a85062499204a57b86318523702c48f,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox1a85062
+cn                             : {HealthMailbox1a85062499204a57b86318523702c48f}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-009
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102306
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102289
+msexchumdtmfmap                : {emailAddress:432584624526912850624992042572863185237022483, lastNameFirstName:4325846245269546475263464009, firstNameLastName:4325846245269546475263464009}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {238, 208, 175, 125, 64, 88, 90, 69, 130, 247, 55, 19, 15, 85, 104, 39}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox1a85062499204a57b86318523702c48f@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {163, 1, 219, 251, 228, 138, 234, 76, 154, 150, 26, 248, 126, 198, 204, 167}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox1a85062499204a57b86318523702c48f
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-009
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailbox1a85062499204a57b86318523702c48f@sevenkingdoms.local, SIP:HealthMailbox1a85062499204a57b86318523702c48f@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox1a85062499204a57b86318523702c48f@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1167}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox6efcb8d6034d417f8dcf75375e1220ea
+distinguishedname              : CN=HealthMailbox6efcb8d6034d417f8dcf75375e1220ea,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox6efcb8d
+cn                             : {HealthMailbox6efcb8d6034d417f8dcf75375e1220ea}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-010
+msexchumenabledflags2          : -1
+msexchmailboxfolderset         : 0
+logoncount                     : 0
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 102308
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 102301
+msexchumdtmfmap                : {emailAddress:432584624526963322836034341738323753753122032, lastNameFirstName:4325846245269546475263464010, firstNameLastName:4325846245269546475263464010}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {232, 4, 190, 73, 244, 8, 100, 64, 154, 172, 176, 81, 216, 89, 86, 2}
+msexchpoliciesincluded         : {<GUID>, {<GUID>}}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox6efcb8d6034d417f8dcf75375e1220ea@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {191, 121, 93, 124, 114, 81, 109, 68, 180, 169, 171, 154, 202, 38, 174, 254}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox6efcb8d6034d417f8dcf75375e1220ea
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-010
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+proxyaddresses                 : {SMTP:HealthMailbox6efcb8d6034d417f8dcf75375e1220ea@sevenkingdoms.local, SIP:HealthMailbox6efcb8d6034d417f8dcf75375e1220ea@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox6efcb8d6034d417f8dcf75375e1220ea@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1168}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : HealthMailbox15ffdb1a61c741a282f59b4594a38182
+distinguishedname              : CN=HealthMailbox15ffdb1a61c741a282f59b4594a38182,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : HealthMailbox15ffdb1
+cn                             : {HealthMailbox15ffdb1a61c741a282f59b4594a38182}
+objectclass                    : {top, person, organizationalPerson, user}
+displayname                    : HealthMailbox-kingslanding-Mailbox-Database-0770373135
+msexchumenabledflags2          : -1
+msexchmobilemailboxflags       : 1
+logoncount                     : 71
+msexcharchivewarnquota         : 94371840
+msexchmailboxtemplatelink      : CN=Default MRM Policy,CN=Retention Policies Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchuseraccountcontrol       : 0
+usnchanged                     : 1216668
+msexchrbacpolicylink           : CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 1179777
+msexchumdtmfmap                : {emailAddress:432584624526915333212612741228235924594238182, lastNameFirstName:43258462452695464752634646245269328222730770373135, firstNameLastName:43258462452695464752634646245269328222730770373135}
+dscorepropagationdata          : <TIMESTAMP>
+msexcharchiveguid              : {248, 62, 167, 228, 104, 197, 164, 71, 154, 120, 183, 227, 123, 116, 63, 52}
+msexchmailboxauditenable       : False
+msexchdumpsterquota            : 31457280
+userprincipalname              : HealthMailbox15ffdb1a61c741a282f59b4594a38182@sevenkingdoms.local
+instancetype                   : 4
+msexchwhenmailboxcreated       : <TIMESTAMP>
+msexchtextmessagingstate       : {302120705, 16842751}
+msexchmailboxauditlogagelimit  : 7776000
+msexchpoliciesexcluded         : {<GUID>}
+msexchdumpsterwarningquota     : 20971520
+showinaddressbook              : CN=All Recipients(VLV),CN=All System Address Lists,CN=Address Lists Container,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchprovisioningflags        : 0
+msexchmdbrulesquota            : 256
+countrycode                    : 0
+msexchtransportrecipientset... : 0
+msexchelcmailboxflags          : 2
+msexchhidefromaddresslists     : True
+garbagecollperiod              : 1209600
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchmailboxguid              : {252, 1, 117, 100, 62, 30, 161, 71, 185, 111, 2, 255, 74, 61, 229, 56}
+legacyexchangedn               : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=<KEY32>-HealthMail
+mailnickname                   : HealthMailbox15ffdb1a61c741a282f59b4594a38182
+msexchgroupsecurityflags       : 0
+internetencoding               : 0
+msexcharchivename              : In-Place Archive -HealthMailbox-kingslanding-Mailbox-Database-0770373135
+proxyaddresses                 : {SMTP:HealthMailbox15ffdb1a61c741a282f59b4594a38182@sevenkingdoms.local, SIP:HealthMailbox15ffdb1a61c741a282f59b4594a38182@sevenkingdoms.local}
+msexchaddressbookflags         : 1
+homemdb                        : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchhomeservername           : /o=sevenkingdoms/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=KINGSLANDING
+msexchbypassaudit              : False
+msexchmoderationflags          : 0
+msexchrecipienttypedetails     : 549755813888
+msexchcalendarloggingquota     : 6291456
+protocolsettings               : RemotePowerShell1
+badpwdcount                    : 0
+msexchuserculture              : en-US
+msexcharchivequota             : 104857600
+msexchversion                  : 88218628259840
+mail                           : HealthMailbox15ffdb1a61c741a282f59b4594a38182@sevenkingdoms.local
+mdbusedefaults                 : True
+primarygroupid                 : 513
+msexchmailboxsecuritydescri... : {1, 0, 4, 128, 20, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0, 4, 0, 28, 0, 1, 0, 0, 0, 0, 2, 20, 0, 1, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 5, 10, 0, 0, 0}
+codepage                       : 0
+msexchmailboxfolderset         : 0
+msexcharchivedatabaselink      : CN=Mailbox Database 0770373135,CN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=sevenkingdoms,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=sevenkingdoms,DC=local
+msexchrecipientsoftdeleteds... : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1169}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : wf-svc-mssql
+distinguishedname              : CN=wf-svc-mssql,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : wf-svc-mssql
+cn                             : {wf-svc-mssql}
+objectclass                    : {top, person, organizationalPerson, user}
+ServicePrincipalName           : MSSQLSvc/wf-svc-mssql.sevenkingdoms.local:1433
+badpwdcount                    : 0
+countrycode                    : 0
+usnchanged                     : 1216639
+logoncount                     : 0
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+dscorepropagationdata          : <TIMESTAMP>
+usncreated                     : 1216635
+instancetype                   : 4
+codepage                       : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1170}
+samaccounttype                 : USER_OBJECT
+objectguid                     : <GUID>
+useraccountcontrol             : NORMAL_ACCOUNT, DONT_EXPIRE_PASSWORD, DONT_REQ_PREAUTH
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : wf-noPreauth
+distinguishedname              : CN=wf-noPreauth,CN=Users,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : wf-noPreauth
+cn                             : {wf-noPreauth}
+objectclass                    : {top, person, organizationalPerson, user}
+badpwdcount                    : 0
+dscorepropagationdata          : <TIMESTAMP>
+countrycode                    : 0
+usnchanged                     : 1216696
+logoncount                     : 1
+primarygroupid                 : 513
+objectcategory                 : CN=Person,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+usncreated                     : 1216641
+instancetype                   : 4
+codepage                       : 0
+

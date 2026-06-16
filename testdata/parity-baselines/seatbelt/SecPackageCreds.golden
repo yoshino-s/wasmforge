@@ -1,0 +1,42 @@
+
+
+====== SecPackageCreds ======
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> GOADF97252-GOAD$ @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : GOADF97252-GOAD$@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> LDAP/kingslanding.sevenkingdoms.local @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : LDAP/kingslanding.sevenkingdoms.local@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> LDAP/kingslanding.sevenkingdoms.local/sevenkingdoms.local @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : LDAP/kingslanding.sevenkingdoms.local/sevenkingdoms.local@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> cifs/kingslanding.sevenkingdoms.local @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : cifs/kingslanding.sevenkingdoms.local@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> cifs/kingslanding.sevenkingdoms.local/sevenkingdoms.local @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : cifs/kingslanding.sevenkingdoms.local/sevenkingdoms.local@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> goadf97252-goad$ @   [etype:18]
+  Version                        : 18
+  Hash                           : goadf97252-goad$@
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> krbtgt/SEVENKINGDOMS.LOCAL @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : krbtgt/SEVENKINGDOMS.LOCAL@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> ldap/kingslanding.sevenkingdoms.local @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : ldap/kingslanding.sevenkingdoms.local@SEVENKINGDOMS.LOCAL
+
+[*] goadf97252-goad$ @ SEVENKINGDOMS.LOCAL -> ldap/kingslanding.sevenkingdoms.local/sevenkingdoms.local @ SEVENKINGDOMS.LOCAL  [etype:18]
+  Version                        : 18
+  Hash                           : ldap/kingslanding.sevenkingdoms.local/sevenkingdoms.local@SEVENKINGDOMS.LOCAL
+
+[*] Completed collection in <DURATION>
+

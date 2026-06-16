@@ -1,0 +1,71 @@
+[Find-DomainShare] Querying computers in the domain
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainComputer] Get-DomainComputer filter string: (&(samAccountType=805306369))
+[Find-DomainShare] TargetComputers length: 2
+[Find-DomainShare] Using threading with threads: 20
+Name                           : ADMIN$
+Type                           : 2147483648
+Remark                         : Remote Admin
+ComputerName                   : GOADf97252-GOAD-Win11.sevenkingdoms.local
+
+Name                           : C$
+Type                           : 2147483648
+Remark                         : Default share
+ComputerName                   : GOADf97252-GOAD-Win11.sevenkingdoms.local
+
+Name                           : IPC$
+Type                           : 2147483651
+Remark                         : Remote IPC
+ComputerName                   : GOADf97252-GOAD-Win11.sevenkingdoms.local
+
+Name                           : Temp
+Type                           : 0
+Remark                         : 
+ComputerName                   : GOADf97252-GOAD-Win11.sevenkingdoms.local
+
+Name                           : WfShare
+Type                           : 0
+Remark                         : WasmForge parity test share
+ComputerName                   : GOADf97252-GOAD-Win11.sevenkingdoms.local
+
+Name                           : address
+Type                           : 0
+Remark                         : 
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : ADMIN$
+Type                           : 2147483648
+Remark                         : Remote Admin
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : C$
+Type                           : 2147483648
+Remark                         : Default share
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : CertEnroll
+Type                           : 0
+Remark                         : Active Directory Certificate Services share
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : IPC$
+Type                           : 2147483651
+Remark                         : Remote IPC
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : NETLOGON
+Type                           : 0
+Remark                         : Logon server share 
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : SYSVOL
+Type                           : 0
+Remark                         : Logon server share 
+ComputerName                   : kingslanding.sevenkingdoms.local
+
+Name                           : Temp
+Type                           : 0
+Remark                         : 
+ComputerName                   : kingslanding.sevenkingdoms.local
+

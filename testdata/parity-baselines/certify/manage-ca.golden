@@ -1,0 +1,26 @@
+
+
+ERROR(S):
+  At least one option from group 'Action' (template, issue-id, deny-id, revoke-cert,
+  issuance-policy, application-policy, enroll, officer, admin, esc6, esc11, esc16) is required.
+  Required option 'ca' is missing.
+
+  --ca                      Required. Target certificate authority (format: SERVER\CA-NAME)
+  --template                (Group: Action) Enable/disable a certificate template (format: NAME)
+  --template-domain         Target domain (format: FQDN)
+  --template-ldap-server    Target LDAP server
+  --issue-id                (Group: Action) Issue a certificate request (format: ID)
+  --deny-id                 (Group: Action) Deny a certificate request (format: ID)
+  --revoke-cert             (Group: Action) Revoke a certificate (format: SERIAL-NUMBER)
+  --issuance-policy         (Group: Action) Set issuance policy (format: REQUEST-ID:OID)
+  --application-policy      (Group: Action) Set application policy (format: REQUEST-ID:OID)
+  --enroll                  (Group: Action) Toggle 'Enroll' role (format: SID)
+  --officer                 (Group: Action) Toggle 'ManageCertificates' role (format: SID)
+  --admin                   (Group: Action) Toggle 'ManageCA' role (format: SID)
+  --esc6                    (Group: Action) Enable/disable ESC6
+  --esc11                   (Group: Action) Enable/disable ESC11
+  --esc16                   (Group: Action) Enable/disable ESC16
+  --out-file                Redirect all output streams to a file (format: FILE-PATH)
+  --quiet                   Omit printing the Certify logo
+
+Certify completed in <DURATION>

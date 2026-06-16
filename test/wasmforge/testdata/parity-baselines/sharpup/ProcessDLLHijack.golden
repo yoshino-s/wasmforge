@@ -1,0 +1,1 @@
+EXCLUDED: wasmforge proc_modules_all bridge enumerates module paths but the planted DLL hijack target (process loading from world-writable dir) is not set up — requires a persistent process whose working dir is writable by Everyone. Lab-setup script does not currently plant a running hijack target. Out-of-scope for this audit pass.

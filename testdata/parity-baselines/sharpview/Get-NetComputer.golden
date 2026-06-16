@@ -1,0 +1,84 @@
+get-domain
+[Get-DomainSearcher] search base: LDAP://kingslanding.sevenkingdoms.local/DC=sevenkingdoms,DC=local
+[Get-DomainComputer] Get-DomainComputer filter string: (&(samAccountType=805306369))
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1001}
+samaccounttype                 : MACHINE_ACCOUNT
+objectguid                     : <GUID>
+useraccountcontrol             : SERVER_TRUST_ACCOUNT, TRUSTED_FOR_DELEGATION
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : KINGSLANDING
+distinguishedname              : CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : KINGSLANDING$
+memberof                       : {CN=Exchange Install Domain Servers,CN=Microsoft Exchange System Objects,DC=sevenkingdoms,DC=local, CN=Managed Availability Servers,OU=Microsoft Exchange Security Groups,DC=sevenkingdoms,DC=local, CN=Exchange Trusted Subsystem,OU=Microsoft Exchange Security Groups,DC=sevenkingdoms,DC=local, CN=Exchange Servers,OU=Microsoft Exchange Security Groups,DC=sevenkingdoms,DC=local, CN=Pre-Windows 2000 Compatible Access,CN=Builtin,DC=sevenkingdoms,DC=local, CN=Cert Publishers,CN=Users,DC=sevenkingdoms,DC=local}
+cn                             : {KINGSLANDING}
+objectclass                    : {top, person, organizationalPerson, user, computer}
+ServicePrincipalName           : IMAP/KINGSLANDING
+dnshostname                    : kingslanding.sevenkingdoms.local
+msds-supportedencryptiontypes  : 28
+usercertificate                : {48, 130, 6, 115, 48, 130, 5, 91, 160, 3, 2, 1, 2, 2, 19, 24, 0, 0, 0, 2, 226, 37, 163, 171, 144, 188, 240, 15, 0, 0, 0, 0, 0, 2, 48, 13, 6, 9, 42, 134, 72, 134, 247, 13, 1, 1, 11, 5, 0, 48, 81, 49, 21, 48, 19, 6, 10, 9, 146, 38, 137, 147, 242, 44, 100, 1, 25, 22, 5, 108, 111, 99, 97, 108, 49, 29, 48, 27, 6, 10, 9, 146, 38, 137, 147, 242, 44, 100, 1, 25, 22, 13, 115, 101, 118, 101, 110, 107, 105, 110, 103, 100, 111, 109, 115, 49, 25, 48, 23, 6, 3, 85, 4, 3, 19, 16, 83, 69, 86, 69, 78, 75, 73, 78, 71, 68, 79, 77, 83, 45, 67, 65, 48, 30, 23, 13, 50, 53, 48, 51, 48, 55, 49, 53, 52, 57, 50, 51, 90, 23, 13, 50, 54, 48, 51, 48, 55, 49, 53, 52, 57, 50, 51, 90, 48, 43, 49, 41, 48, 39, 6, 3, 85, 4, 3, 19, 32, 107, 105, 110, 103, 115, 108, 97, 110, 100, 105, 110, 103, 46, 115, 101, 118, 101, 110, 107, 105, 110, 103, 100, 111, 109, 115, 46, 108, 111, 99, 97, 108, 48, 130, 1, 34, 48, 13, 6, 9, 42, 134, 72, 134, 247, 13, 1, 1, 1, 5, 0, 3, 130, 1, 15, 0, 48, 130, 1, 10, 2, 130, 1, 1, 0, 224, 97, 50, 232, 82, 143, 115, 163, 42, 1, 32, 172, 230, 26, 114, 42, 178, 175, 5, 237, 85, 143, 176, 224, 75, 212, 110, 150, 145, 52, 9, 143, 129, 127, 30, 251, 74, 254, 66, 76, 88, 104, 112, 43, 85, 93, 191, 43, 197, 139, 162, 246, 8, 205, 244, 53, 103, 150, 38, 112, 60, 34, 253, 28, 67, 244, 200, 76, 214, 189, 133, 161, 107, 207, 132, 23, 158, 163, 204, 119, 43, 237, 123, 131, 106, 152, 248, 119, 252, 132, 148, 129, 74, 89, 184, 151, 221, 18, 154, 87, 254, 34, 220, 110, 116, 98, 54, 18, 89, 60, 23, 81, 135, 60, 134, 187, 66, 187, 166, 214, 209, 238, 135, 113, 97, 144, 93, 36, 210, 98, 84, 208, 192, 236, 7, 242, 68, 208, 200, 126, 125, 84, 173, 108, 11, 86, 179, 225, 70, 217, 160, 182, 29, 178, 222, 215, 158, 209, 39, 133, 46, 11, 203, 22, 17, 222, 42, 188, 123, 26, 176, 94, 218, 155, 255, 54, 60, 68, 108, 10, 10, 213, 157, 207, 127, 246, 2, 200, 30, 236, 247, 225, 169, 174, 1, 218, 53, 54, 213, 192, 153, 20, 127, 116, 100, 63, 243, 126, 85, 8, 104, 64, 81, 188, 209, 208, 134, 167, 93, 121, 197, 92, 37, 112, 155, 61, 73, 35, 150, 149, 34, 168, 29, 159, 38, 37, 220, 64, 106, 148, 185, 215, 228, 233, 196, 255, 47, 196, 239, 208, 117, 195, 189, 213, 202, 237, 2, 3, 1, 0, 1, 163, 130, 3, 104, 48, 130, 3, 100, 48, 47, 6, 9, 43, 6, 1, 4, 1, 130, 55, 20, 2, 4, 34, 30, 32, 0, 68, 0, 111, 0, 109, 0, 97, 0, 105, 0, 110, 0, 67, 0, 111, 0, 110, 0, 116, 0, 114, 0, 111, 0, 108, 0, 108, 0, 101, 0, 114, 48, 29, 6, 3, 85, 29, 37, 4, 22, 48, 20, 6, 8, 43, 6, 1, 5, 5, 7, 3, 2, 6, 8, 43, 6, 1, 5, 5, 7, 3, 1, 48, 14, 6, 3, 85, 29, 15, 1, 1, 255, 4, 4, 3, 2, 5, 160, 48, 120, 6, 9, 42, 134, 72, 134, 247, 13, 1, 9, 15, 4, 107, 48, 105, 48, 14, 6, 8, 42, 134, 72, 134, 247, 13, 3, 2, 2, 2, 0, 128, 48, 14, 6, 8, 42, 134, 72, 134, 247, 13, 3, 4, 2, 2, 0, 128, 48, 11, 6, 9, 96, 134, 72, 1, 101, 3, 4, 1, 42, 48, 11, 6, 9, 96, 134, 72, 1, 101, 3, 4, 1, 45, 48, 11, 6, 9, 96, 134, 72, 1, 101, 3, 4, 1, 2, 48, 11, 6, 9, 96, 134, 72, 1, 101, 3, 4, 1, 5, 48, 7, 6, 5, 43, 14, 3, 2, 7, 48, 10, 6, 8, 42, 134, 72, 134, 247, 13, 3, 7, 48, 29, 6, 3, 85, 29, 14, 4, 22, 4, 20, 136, 215, 95, 115, 128, 215, 247, 82, 190, 18, 124, 0, 161, 173, 233, 64, 106, 34, 75, 75, 48, 31, 6, 3, 85, 29, 35, 4, 24, 48, 22, 128, 20, 190, 8, 106, 74, 17, 185, 150, 121, 37, 77, 76, 223, 56, 194, 22, 66, 225, 235, 81, 249, 48, 129, 219, 6, 3, 85, 29, 31, 4, 129, 211, 48, 129, 208, 48, 129, 205, 160, 129, 202, 160, 129, 199, 134, 129, 196, 108, 100, 97, 112, 58, 47, 47, 47, 67, 78, 61, 83, 69, 86, 69, 78, 75, 73, 78, 71, 68, 79, 77, 83, 45, 67, 65, 44, 67, 78, 61, 107, 105, 110, 103, 115, 108, 97, 110, 100, 105, 110, 103, 44, 67, 78, 61, 67, 68, 80, 44, 67, 78, 61, 80, 117, 98, 108, 105, 99, 37, 50, 48, 75, 101, 121, 37, 50, 48, 83, 101, 114, 118, 105, 99, 101, 115, 44, 67, 78, 61, 83, 101, 114, 118, 105, 99, 101, 115, 44, 67, 78, 61, 67, 111, 110, 102, 105, 103, 117, 114, 97, 116, 105, 111, 110, 44, 68, 67, 61, 115, 101, 118, 101, 110, 107, 105, 110, 103, 100, 111, 109, 115, 44, 68, 67, 61, 108, 111, 99, 97, 108, 63, 99, 101, 114, 116, 105, 102, 105, 99, 97, 116, 101, 82, 101, 118, 111, 99, 97, 116, 105, 111, 110, 76, 105, 115, 116, 63, 98, 97, 115, 101, 63, 111, 98, 106, 101, 99, 116, 67, 108, 97, 115, 115, 61, 99, 82, 76, 68, 105, 115, 116, 114, 105, 98, 117, 116, 105, 111, 110, 80, 111, 105, 110, 116, 48, 129, 202, 6, 8, 43, 6, 1, 5, 5, 7, 1, 1, 4, 129, 189, 48, 129, 186, 48, 129, 183, 6, 8, 43, 6, 1, 5, 5, 7, 48, 2, 134, 129, 170, 108, 100, 97, 112, 58, 47, 47, 47, 67, 78, 61, 83, 69, 86, 69, 78, 75, 73, 78, 71, 68, 79, 77, 83, 45, 67, 65, 44, 67, 78, 61, 65, 73, 65, 44, 67, 78, 61, 80, 117, 98, 108, 105, 99, 37, 50, 48, 75, 101, 121, 37, 50, 48, 83, 101, 114, 118, 105, 99, 101, 115, 44, 67, 78, 61, 83, 101, 114, 118, 105, 99, 101, 115, 44, 67, 78, 61, 67, 111, 110, 102, 105, 103, 117, 114, 97, 116, 105, 111, 110, 44, 68, 67, 61, 115, 101, 118, 101, 110, 107, 105, 110, 103, 100, 111, 109, 115, 44, 68, 67, 61, 108, 111, 99, 97, 108, 63, 99, 65, 67, 101, 114, 116, 105, 102, 105, 99, 97, 116, 101, 63, 98, 97, 115, 101, 63, 111, 98, 106, 101, 99, 116, 67, 108, 97, 115, 115, 61, 99, 101, 114, 116, 105, 102, 105, 99, 97, 116, 105, 111, 110, 65, 117, 116, 104, 111, 114, 105, 116, 121, 48, 76, 6, 3, 85, 29, 17, 4, 69, 48, 67, 160, 31, 6, 9, 43, 6, 1, 4, 1, 130, 55, 25, 1, 160, 18, 4, 16, 196, 85, 177, 205, 121, 135, 150, 76, 185, 18, 170, 131, 127, 99, 35, 1, 130, 32, 107, 105, 110, 103, 115, 108, 97, 110, 100, 105, 110, 103, 46, 115, 101, 118, 101, 110, 107, 105, 110, 103, 100, 111, 109, 115, 46, 108, 111, 99, 97, 108, 48, 79, 6, 9, 43, 6, 1, 4, 1, 130, 55, 25, 2, 4, 66, 48, 64, 160, 62, 6, 10, 43, 6, 1, 4, 1, 130, 55, 25, 2, 1, 160, 48, 4, 46, 83, 45, 49, 45, 53, 45, 50, 49, 45, 52, 48, 51, 54, 55, 50, 53, 50, 55, 54, 45, 51, 51, 54, 50, 52, 52, 55, 55, 49, 56, 45, 51, 52, 51, 49, 49, 56, 50, 51, 49, 53, 45, 49, 48, 48, 49, 48, 13, 6, 9, 42, 134, 72, 134, 247, 13, 1, 1, 11, 5, 0, 3, 130, 1, 1, 0, 161, 230, 245, 97, 105, 4, 163, 11, 246, 22, 179, 84, 179, 157, 18, 9, 127, 208, 139, 181, 218, 221, 228, 152, 7, 106, 14, 13, 167, 74, 194, 49, 249, 114, 82, 21, 169, 111, 150, 64, 72, 92, 127, 228, 9, 169, 21, 52, 58, 10, 54, 44, 194, 10, 190, 66, 214, 136, 204, 41, 49, 159, 183, 107, 167, 75, 216, 121, 160, 21, 209, 159, 146, 68, 22, 102, 255, 218, 13, 72, 163, 69, 45, 75, 200, 179, 30, 148, 70, 139, 5, 144, 45, 193, 23, 124, 122, 218, 50, 17, 90, 244, 179, 78, 169, 107, 235, 36, 222, 11, 48, 181, 95, 159, 213, 110, 19, 40, 118, 14, 128, 239, 70, 169, 79, 46, 139, 144, 111, 186, 47, 211, 218, 187, 58, 216, 19, 214, 144, 139, 211, 109, 149, 200, 252, 196, 129, 111, 24, 230, 163, 22, 84, 110, 74, 232, 121, 253, 42, 34, 26, 191, 34, 116, 51, 210, 99, 55, 92, 189, 97, 27, 70, 236, 168, 191, 93, 238, 96, 178, 69, 239, 30, 55, 58, 207, 141, 191, 249, 22, 232, 196, 3, 136, 32, 190, 237, 125, 27, 156, 79, 228, 179, 197, 224, 162, 188, 74, 13, 143, 55, 59, 251, 0, 191, 230, 246, 31, 242, 129, 85, 142, 122, 90, 207, 123, 254, 95, 10, 149, 216, 163, 13, 142, 96, 25, 52, 249, 250, 2, 201, 227, 194, 56, 157, 107, 35, 55, 138, 210, 255, 175, 114, 217, 212, 217}
+admincount                     : 1
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>, <TIMESTAMP>}
+countrycode                    : 0
+usnchanged                     : 1216653
+operatingsystemversion         : 10.0 (17763)
+localpolicyflags               : 0
+msexchcapabilityidentifiers    : 1
+ridsetreferences               : CN=RID Set,CN=KINGSLANDING,OU=Domain Controllers,DC=sevenkingdoms,DC=local
+msexchextensionattribute45     : 1.79769313486232E+308@@134246545101974689
+msds-generationid              : {148, 221, 0, 64, 85, 0, 155, 77}
+msdfsr-computerreferencebl     : CN=KINGSLANDING,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=sevenkingdoms,DC=local
+msexchrmscomputeraccountsbl    : CN=FederatedEmail.<GUID>,CN=Users,DC=sevenkingdoms,DC=local
+primarygroupid                 : 516
+objectcategory                 : CN=Computer,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+logoncount                     : 3224
+usncreated                     : 12293
+serverreferencebl              : CN=KINGSLANDING,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sevenkingdoms,DC=local
+iscriticalsystemobject         : True
+badpwdcount                    : 0
+admindescription               : 133861893329442400
+operatingsystem                : Windows Server 2019 Standard Evaluation
+instancetype                   : 4
+codepage                       : 0
+
+objectsid                      : {S-1-5-21-4036725276-3362447718-3431182315-1126}
+samaccounttype                 : MACHINE_ACCOUNT
+objectguid                     : <GUID>
+useraccountcontrol             : WORKSTATION_TRUST_ACCOUNT
+accountexpires                 : NEVER
+lastlogon                      : <TIMESTAMP>
+lastlogontimestamp             : <TIMESTAMP>
+pwdlastset                     : <TIMESTAMP>
+lastlogoff                     : <TIMESTAMP>
+badPasswordTime                : <TIMESTAMP>
+name                           : GOADF97252-GOAD
+distinguishedname              : CN=GOADF97252-GOAD,OU=Workstations,DC=sevenkingdoms,DC=local
+whencreated                    : <TIMESTAMP>
+whenchanged                    : <TIMESTAMP>
+samaccountname                 : GOADF97252-GOAD$
+cn                             : {GOADF97252-GOAD}
+objectclass                    : {top, person, organizationalPerson, user, computer}
+ServicePrincipalName           : TERMSRV/GOADF97252-GOAD
+dnshostname                    : GOADf97252-GOAD-Win11.sevenkingdoms.local
+msds-supportedencryptiontypes  : 28
+iscriticalsystemobject         : False
+badpwdcount                    : 0
+countrycode                    : 0
+usnchanged                     : 1065053
+operatingsystemversion         : 10.0 (22621)
+localpolicyflags               : 0
+logoncount                     : 326
+primarygroupid                 : 515
+objectcategory                 : CN=Computer,CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local
+dscorepropagationdata          : {<TIMESTAMP>, <TIMESTAMP>}
+usncreated                     : 22206
+operatingsystem                : Windows 11 Enterprise Evaluation
+instancetype                   : 4
+codepage                       : 0
+

@@ -1,0 +1,44 @@
+
+
+====== LocalGroups ======
+
+Non-empty Local Groups (and memberships)
+
+  ** GOADF97252-GOAD\Administrators ** (Administrators have complete and unrestricted access to the computer/domain)
+
+  User            GOADF97252-GOAD\Administrator            S-1-5-21-938188635-2802087747-672847961-500
+  User            GOADF97252-GOAD\localuser                S-1-5-21-938188635-2802087747-672847961-1000
+  Group           SEVENKINGDOMS\Domain Admins              S-1-5-21-4036725276-3362447718-3431182315-512
+
+  ** GOADF97252-GOAD\Guests ** (Guests have the same access as members of the Users group by default, except for the Guest account which is further restricted)
+
+  User            GOADF97252-GOAD\Guest                    S-1-5-21-938188635-2802087747-672847961-501
+
+  ** GOADF97252-GOAD\IIS_IUSRS ** (Built-in group used by Internet Information Services.)
+
+  WellKnownGroup  NT AUTHORITY\IUSR                        S-1-5-17
+
+  ** GOADF97252-GOAD\Remote Desktop Users ** (Members in this group are granted the right to logon remotely)
+
+  User            SEVENKINGDOMS\domainadmin                S-1-5-21-4036725276-3362447718-3431182315-1125
+  User            SEVENKINGDOMS\domainuser                 S-1-5-21-4036725276-3362447718-3431182315-1124
+  User            GOADF97252-GOAD\testlow                  S-1-5-21-938188635-2802087747-672847961-1003
+
+  ** GOADF97252-GOAD\System Managed Accounts Group ** (Members of this group are managed by the system.)
+
+  User            GOADF97252-GOAD\DefaultAccount           S-1-5-21-938188635-2802087747-672847961-503
+
+  ** GOADF97252-GOAD\Users ** (Users are prevented from making accidental or intentional system-wide changes and can run most applications)
+
+  WellKnownGroup  NT AUTHORITY\INTERACTIVE                 S-1-5-4
+  WellKnownGroup  NT AUTHORITY\Authenticated Users         S-1-5-11
+  User            GOADF97252-GOAD\localuser                S-1-5-21-938188635-2802087747-672847961-1000
+  Group           SEVENKINGDOMS\Domain Users               S-1-5-21-4036725276-3362447718-3431182315-513
+  User            GOADF97252-GOAD\testlow                  S-1-5-21-938188635-2802087747-672847961-1003
+
+  ** GOADF97252-GOAD\Netmon Users ** (Netmon Users can capture network traffic to and from this computer)
+
+  User            GOADF97252-GOAD\localuser                S-1-5-21-938188635-2802087747-672847961-1000
+
+[*] Completed collection in <DURATION>
+

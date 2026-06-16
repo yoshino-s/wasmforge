@@ -1,0 +1,10 @@
+
+
+====== PoweredOnEvents ======
+
+Collecting kernel boot (EID 12) and shutdown (EID 13) events from the last 7 days
+
+Powered On Events (Time is local time)
+
+[*] Completed collection in <DURATION>
+

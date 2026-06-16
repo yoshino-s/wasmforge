@@ -1,0 +1,19 @@
+
+=== SharpUp: Running Privilege Escalation Checks ===
+
+[*] Already in high integrity, no need to privesc!
+
+[*] Audit mode: running an additional 1 check(s).
+[*] Note: Running audit mode in high integrity will yield a large number of false positives.
+Registry AutoLogon Found
+
+=== Registry AutoLogons ===
+	DefaultDomainName: GOADF97252-GOAD
+	DefaultUserName: WfAutoLogonUser
+	DefaultPassword: WfAutoLogonP@ss!
+	AltDefaultDomainName: 
+	AltDefaultUserName: 
+	AltDefaultPassword: 
+
+[*] Completed Privesc Checks in 4 seconds
+

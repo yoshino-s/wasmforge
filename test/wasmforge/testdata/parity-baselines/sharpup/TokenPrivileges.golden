@@ -1,0 +1,1 @@
+EXCLUDED: domainuser standard token has no exploitable privileges (SeImpersonatePrivilege, SeAssignPrimaryTokenPrivilege, etc.). Check returns 'not vulnerable' which is the truthful answer but not useful evidence. Fix path: grant SeImpersonatePrivilege to a dedicated test user (via 'secedit /import' or ntrights.exe) and run the check under that user.

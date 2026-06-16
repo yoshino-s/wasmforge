@@ -1,0 +1,20 @@
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  <VERSION>
+[*] Action: Calculate Password Hash(es)
+
+[*] Input password             : password
+[*] Input username             : domainuser
+[*] Input domain               : sevenkingdoms.local
+[*] Salt                       : SEVENKINGDOMS.LOCALdomainuser
+[*]       rc4_hmac             : <KEY>
+[*]       aes128_cts_hmac_sha1 : <KEY>
+[*]       aes256_cts_hmac_sha1 : <KEY>
+[*]       des_cbc_md5          : <KEY>
+

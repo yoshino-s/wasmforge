@@ -1,0 +1,1 @@
+EXCLUDED: same WMI dependency — UnquotedServicePath enumerates Win32_Service via the WMI bridge that throws lazy P/Invoke.

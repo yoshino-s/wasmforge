@@ -1,0 +1,14 @@
+
+  __                 _   _       _ ___
+ (_  |_   _. ._ ._  | \ |_) /\  |_) |
+ __) | | (_| |  |_) |_/ |  /--\ |  _|_
+                |
+  <VERSION>
+[*] Action: Retrieve domain DPAPI backup key
+
+[*] Using current domain controller  : kingslanding.sevenkingdoms.local
+[*] Preferred backupkey Guid         : <GUID>
+[*] Full preferred backupKeyName     : G$BCKUPKEY_33da1933-923b-41d4-b987-bc602649a09f
+[*] Key                              : <KIRBI>
+
+SharpDPAPI completed in <DURATION>

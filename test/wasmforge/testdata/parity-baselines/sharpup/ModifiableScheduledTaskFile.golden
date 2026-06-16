@@ -1,0 +1,1 @@
+EXCLUDED: requires admin to enumerate C:\Windows\System32\Tasks\ via Directory.GetFiles (and that API has the WASI gap regardless). SharpUp prints "Modifiable scheduled tasks were not evaluated due to permissions." Fix path: schtasks bridge OR run as admin AND fix Directory.GetFiles.

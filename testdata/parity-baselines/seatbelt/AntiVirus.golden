@@ -1,0 +1,10 @@
+
+
+====== AntiVirus ======
+
+  Engine                         : Windows Defender
+  ProductEXE                     : windowsdefender://
+  ReportingEXE                   : %ProgramFiles%\Windows Defender\MsMpeng.exe
+
+[*] Completed collection in <DURATION>
+

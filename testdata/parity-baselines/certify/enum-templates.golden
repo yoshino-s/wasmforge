@@ -1,0 +1,870 @@
+
+   _____          _   _  __          
+  / ____|        | | (_)/ _|         
+ | |     ___ _ __| |_ _| |_ _   _    
+ | |    / _ \ '__| __| |  _| | | |   
+ | |___|  __/ |  | |_| | | | |_| |   
+  \_____\___|_|   \__|_|_|  \__, |   
+                             __/ |   
+                            |___./   
+  <VERSION>
+[*] Action: Find certificate templates
+[*] Using the search base 'CN=Configuration,DC=sevenkingdoms,DC=local'
+[*] Classifying vulnerabilities in the context of built-in low-privileged domain groups.
+
+[*] Listing info about the enterprise certificate authority 'SEVENKINGDOMS-CA'
+
+    Enterprise CA Name            : SEVENKINGDOMS-CA
+    DNS Hostname                  : kingslanding.sevenkingdoms.local
+    FullName                      : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Flags                         : SUPPORTS_NT_AUTHENTICATION, CA_SERVERTYPE_ADVANCED
+    Cert SubjectName              : CN=SEVENKINGDOMS-CA, DC=sevenkingdoms, DC=local
+    Cert Thumbprint               : 9036CE1D5CD19EA8CFEF3D8C3C0CD1FF7C98953A
+    Cert Serial                   : <KEY32>
+    Cert Start Date               : <TIMESTAMP>
+    Cert End Date                 : <TIMESTAMP>
+    Cert Chain                    : CN=SEVENKINGDOMS-CA,DC=sevenkingdoms,DC=local
+    User Specifies SAN            : Disabled
+    RPC Request Encryption        : Enabled
+    Vulnerabilities
+      ESC8                        : The CA supports HTTPS web enrollment without channel binding.
+    CA Permissions
+      Owner: BUILTIN\Administrators             S-1-5-32-544
+
+      Access Rights                                     Principal
+      Allow  Enroll                                     NT AUTHORITY\Authenticated Users   S-1-5-11
+      Allow  ManageCA, ManageCertificates               BUILTIN\Administrators             S-1-5-32-544
+      Allow  ManageCA, ManageCertificates               SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+      Allow  ManageCA, ManageCertificates               SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+    Enrollment Agent Restrictions : None
+
+[*] Certificate templates found using the current filter parameters:
+
+    Template Name                         : User
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Encrypting File System, Secure Email
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Users         S-1-5-21-4036725276-3362447718-3431182315-513
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : UserSignature
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Secure Email
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Users         S-1-5-21-4036725276-3362447718-3431182315-513
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : SmartcardUser
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Secure Email, Smart Card Logon
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : ClientAuth
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Users         S-1-5-21-4036725276-3362447718-3431182315-513
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : SmartcardLogon
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Smart Card Logon
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : EFS
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Encrypting File System
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Users         S-1-5-21-4036725276-3362447718-3431182315-513
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : Administrator
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Encrypting File System, Microsoft Trust List Signing, Secure Email
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : EFSRecovery
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 5 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : File Recovery
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : CodeSigning
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Code Signing
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : CTLSigning
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Microsoft Trust List Signing
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : EnrollmentAgent
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Certificate Request Agent
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : EnrollmentAgentOffline
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Certificate Request Agent
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : MachineEnrollmentAgent
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_DNS_AS_CN
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Certificate Request Agent
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : Machine
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_DNS_AS_CN
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Server Authentication
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Computers     S-1-5-21-4036725276-3362447718-3431182315-515
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : DomainController
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DIRECTORY_GUID, SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_DNS_AS_CN
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Server Authentication
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERSS-1-5-9
+                                      SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Controllers   S-1-5-21-4036725276-3362447718-3431182315-516
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+                                      SEVENKINGDOMS\Enterprise Read-only Domain ControllersS-1-5-21-4036725276-3362447718-3431182315-498
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : WebServer
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Server Authentication
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : CA
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 5 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : <null>
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : SubCA
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 1
+    Validity Period                       : 5 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : <null>
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : IPSECIntermediateOnline
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_DNS_AS_CN
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : IP security IKE intermediate
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Computers     S-1-5-21-4036725276-3362447718-3431182315-515
+                                      SEVENKINGDOMS\Domain Controllers   S-1-5-21-4036725276-3362447718-3431182315-516
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : IPSECIntermediateOffline
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : IP security IKE intermediate
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : OfflineRouter
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : CEPEncryption
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Certificate Request Agent
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : ExchangeUser
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Secure Email
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : ExchangeUserSignature
+    Enabled                               : False
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : NONE
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Secure Email
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : CrossCA
+    Enabled                               : False
+    Schema Version                        : 2
+    Validity Period                       : 5 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : PUBLISH_TO_DS
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 1
+    Required Application Policies         : Qualified Subordination
+    Extended Key Usage                    : <null>
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : CAExchange
+    Enabled                               : False
+    Schema Version                        : 2
+    Validity Period                       : 1 week
+    Renewal Period                        : 1 day
+    Certificate Name Flag                 : ENROLLEE_SUPPLIES_SUBJECT
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Private Key Archival
+    Certificate Application Policies      : Private Key Archival
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : KeyRecoveryAgent
+    Enabled                               : False
+    Schema Version                        : 2
+    Validity Period                       : 2 years
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PEND_ALL_REQUESTS, PUBLISH_TO_KRA_CONTAINER, AUTO_ENROLLMENT
+    Manager Approval Required             : True
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Key Recovery Agent
+    Certificate Application Policies      : Key Recovery Agent
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : DomainControllerAuthentication
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 2
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Server Authentication, Smart Card Logon
+    Certificate Application Policies      : Client Authentication, Server Authentication, Smart Card Logon
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERSS-1-5-9
+                                      SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Controllers   S-1-5-21-4036725276-3362447718-3431182315-516
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+                                      SEVENKINGDOMS\Enterprise Read-only Domain ControllersS-1-5-21-4036725276-3362447718-3431182315-498
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : DirectoryEmailReplication
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 2
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DIRECTORY_GUID, SUBJECT_ALT_REQUIRE_DNS
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Directory Service Email Replication
+    Certificate Application Policies      : Directory Service Email Replication
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERSS-1-5-9
+                                      SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Controllers   S-1-5-21-4036725276-3362447718-3431182315-516
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+                                      SEVENKINGDOMS\Enterprise Read-only Domain ControllersS-1-5-21-4036725276-3362447718-3431182315-498
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : Workstation
+    Enabled                               : False
+    Schema Version                        : 2
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication
+    Certificate Application Policies      : Client Authentication
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Computers     S-1-5-21-4036725276-3362447718-3431182315-515
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : RASAndIASServer
+    Enabled                               : False
+    Schema Version                        : 2
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_COMMON_NAME
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Server Authentication
+    Certificate Application Policies      : Client Authentication, Server Authentication
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+                                      SEVENKINGDOMS\RAS and IAS Servers  S-1-5-21-4036725276-3362447718-3431182315-553
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : OCSPResponseSigning
+    Enabled                               : False
+    Schema Version                        : 3
+    Validity Period                       : 2 weeks
+    Renewal Period                        : 2 days
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_DNS_AS_CN
+    Enrollment Flag                       : ADD_OCSP_NOCHECK, NOREVOCATIONINFOINISSUEDCERTS
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Required Application Policies         : 
+    Extended Key Usage                    : OCSP Signing
+    Certificate Application Policies      : OCSP Signing
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+    Template Name                         : KerberosAuthentication
+    Enabled                               : True
+    Publishing CAs                        : kingslanding.sevenkingdoms.local\SEVENKINGDOMS-CA
+    Schema Version                        : 2
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_DOMAIN_DNS, SUBJECT_ALT_REQUIRE_DNS
+    Enrollment Flag                       : AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, KDC Authentication, Server Authentication, Smart Card Logon
+    Certificate Application Policies      : Client Authentication, KDC Authentication, Server Authentication, Smart Card Logon
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERSS-1-5-9
+                                      SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Domain Controllers   S-1-5-21-4036725276-3362447718-3431182315-516
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+                                      SEVENKINGDOMS\Enterprise Read-only Domain ControllersS-1-5-21-4036725276-3362447718-3431182315-498
+      Object Control Permissions
+        Owner                       : SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Owner                 : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Dacl                  : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+        Write Property              : SEVENKINGDOMS\Domain Admins        S-1-5-21-4036725276-3362447718-3431182315-512
+                                      SEVENKINGDOMS\Enterprise Admins    S-1-5-21-4036725276-3362447718-3431182315-519
+
+Certify completed in <DURATION>

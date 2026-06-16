@@ -1,0 +1,16 @@
+
+
+ERROR(S):
+  Required option 'ca' is missing.
+  Required option 'id' is missing.
+
+  --ca                 Required. Target certificate authority (format: SERVER\CA-NAME)
+  --id                 Required. Target certificate request id
+  --private-key        Target certificate request private key
+  --output-pem         Output certificate in PEM format
+  --install-machine    Install certificate in the machine store
+  --install-user       Install certificate in the user store
+  --out-file           Redirect all output streams to a file (format: FILE-PATH)
+  --quiet              Omit printing the Certify logo
+
+Certify completed in <DURATION>

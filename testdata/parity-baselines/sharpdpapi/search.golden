@@ -1,0 +1,191 @@
+
+  __                 _   _       _ ___
+ (_  |_   _. ._ ._  | \ |_) /\  |_) |
+ __) | | (_| |  |_) |_/ |  /--\ |  _|_
+                |
+  <VERSION>
+[*] Action: Searching for DPAPI blobs
+[*] Search type: registry
+[*] Searching the key HLKM and HKCU hives for DPAPI blobs
+
+[*] Searching USERS hive:
+
+Root: HKEY_USERS\
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\input\Personalization ! UserDictKey
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\System\GameConfigStore\Children\<GUID> ! Parent
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Property ! 0018C01071F21934
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Property ! 00184012D3377F53
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Property ! 0018C01074544FF6
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Property ! 0018C01071F28C31
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Property ! 0018C01071F21934
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Property ! 00184012D3377F53
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02rgqjnmuygepkva ! Provision Thursday, March 06, 2025 22:52:21
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02svfiuoktlgnegd ! Request Thursday, March 20, 2025 16:24:35
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02svfiuoktlgnegd ! Response Thursday, March 20, 2025 16:24:35
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02tnbvdvqfrrnsye ! Provision Friday, March 07, 2025 12:56:59
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\.DEFAULT\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\S-1-15-2-1609473798-1231923017-684268153-4268514328-882773646-2760585773-1760938157 ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\S-1-15-2-283421221-3183566570-1718213290-751554359-3541592344-2312209569-3374928651 ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\S-1-15-2-350187224-1905355452-1037786396-3028148496-2624191407-3283318427-1255436723 ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-4036725276-3362447718-3431182315-1124\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\S-1-15-2-1609473798-1231923017-684268153-4268514328-882773646-2760585773-1760938157 ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\S-1-15-2-283421221-3183566570-1718213290-751554359-3541592344-2312209569-3374928651 ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\S-1-15-2-350187224-1905355452-1037786396-3028148496-2624191407-3283318427-1255436723 ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-21-938188635-2802087747-672847961-1000\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02rgqjnmuygepkva ! Provision Thursday, March 06, 2025 22:52:21
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02svfiuoktlgnegd ! Request Thursday, March 20, 2025 16:24:35
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02svfiuoktlgnegd ! Response Thursday, March 20, 2025 16:24:35
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\DeviceIdentities\production\Logs\02tnbvdvqfrrnsye ! Provision Friday, March 07, 2025 12:56:59
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+HKEY_USERS\\S-1-5-18\Software\Microsoft\IdentityCRL\Immersive\production\Token\{<GUID>} ! DeviceTicket
+
+[*] Searching HKLM hive:
+
+Root: HKEY_LOCAL_MACHINE\
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09660 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09662 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09663 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09664 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09665 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09671 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09675 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09677 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09678 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\09680 ! Default
+HKEY_LOCAL_MACHINE\\SOFTWARE\Classes\Licenses\<GUID>\0bcad ! Default
+
+SharpDPAPI completed in <DURATION>

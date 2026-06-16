@@ -1,0 +1,30 @@
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  <VERSION>
+Action: List Kerberos Tickets (Current User)
+
+[*] Current LUID    : <LUID>
+
+  UserName                 : domainuser
+  Domain                   : SEVENKINGDOMS
+  LogonId                  : <LUID>
+  UserSID                  : S-1-5-21-4036725276-3362447718-3431182315-1124
+  AuthenticationPackage    : Kerberos
+  LogonType                : NetworkCleartext
+  LogonTime                : <TIMESTAMP>
+  LogonServer              : KINGSLANDING
+  LogonServerDNSDomain     : SEVENKINGDOMS.LOCAL
+  UserPrincipalName        : domainuser@sevenkingdoms.local
+
+    [0] - <LUID> - aes256_cts_hmac_sha1
+      <KEY>: <TIMESTAMP> ; <TIMESTAMP> ; <TIMESTAMP>
+      Server Name       : krbtgt/SEVENKINGDOMS.LOCAL @ SEVENKINGDOMS.LOCAL
+      Client Name       : domainuser @ SEVENKINGDOMS.LOCAL
+      Flags             : name_canonicalize, pre_authent, initial, renewable, forwardable (40e10000)
+

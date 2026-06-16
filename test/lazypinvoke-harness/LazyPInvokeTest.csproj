@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <RootNamespace>LazyPInvokeTest</RootNamespace>
+    <AssemblyName>LazyPInvokeTest</AssemblyName>
+    <PublishTrimmed>true</PublishTrimmed>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RuntimeIdentifier>wasi-wasm</RuntimeIdentifier>
+    <UseAppHost>false</UseAppHost>
+    <SelfContained>true</SelfContained>
+    <MSBuildEnableWorkloadResolver>false</MSBuildEnableWorkloadResolver>
+    <DefineConstants>NATIVEAOT_WASI</DefineConstants>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.ILCompiler.LLVM" Version="10.0.0-*" />
+    <PackageReference Include="runtime.linux-x64.Microsoft.DotNet.ILCompiler.LLVM" Version="10.0.0-*" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeLibrary Include="bridge/wf_bridge.c" />
+    <NativeLibrary Include="bridge/pinvoke_nativeaot.c" />
+    <NativeLibrary Include="bridge/pinvoke_advapi32_ext.c" />
+    <NativeLibrary Include="bridge/pinvoke_kernel32_ext.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <DirectPInvoke Include="*" />
+    <DirectPInvoke Include="ntdll" />
+    <DirectPInvoke Include="ntdll.dll" />
+    <DirectPInvoke Include="crypt32" />
+    <DirectPInvoke Include="Crypt32" />
+    <DirectPInvoke Include="Crypt32.dll" />
+    <DirectPInvoke Include="advapi32" />
+    <DirectPInvoke Include="advapi32.dll" />
+    <DirectPInvoke Include="ncrypt" />
+    <DirectPInvoke Include="ncrypt.dll" />
+  </ItemGroup>
+</Project>

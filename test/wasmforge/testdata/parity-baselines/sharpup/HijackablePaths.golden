@@ -1,0 +1,1 @@
+EXCLUDED: NativeAOT-WASI Environment.GetEnvironmentVariable("Path") returns the WASI-mapped PATH, not the Win32 system PATH. Planted C:\WfHijackPath in system PATH but check sees a different value. Fix path: route GetEnvironmentVariable for PATH through a host bridge that reads the Win32 process env block.

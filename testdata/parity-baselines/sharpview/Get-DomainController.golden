@@ -1,0 +1,13 @@
+Forest                         : sevenkingdoms.local
+CurrentTime                    : <TIMESTAMP>
+HighestCommittedUsn            : 1216723
+OSVersion                      : Windows Server 2019 Standard Evaluation
+Roles                          : {SchemaRole, NamingRole, PdcRole, RidRole, InfrastructureRole}
+Domain                         : sevenkingdoms.local
+IPAddress                      : 10.3.10.10
+SiteName                       : Default-First-Site-Name
+InboundConnections             : {<GUID>}
+OutboundConnections            : {<GUID>}
+Name                           : kingslanding.sevenkingdoms.local
+Partitions                     : {DC=sevenkingdoms,DC=local, CN=Configuration,DC=sevenkingdoms,DC=local, CN=Schema,CN=Configuration,DC=sevenkingdoms,DC=local, DC=DomainDnsZones,DC=sevenkingdoms,DC=local, DC=ForestDnsZones,DC=sevenkingdoms,DC=local, DC=north,DC=sevenkingdoms,DC=local}
+

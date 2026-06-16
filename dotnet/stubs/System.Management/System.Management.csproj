@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>System.Management</RootNamespace>
+    <AssemblyName>System.Management</AssemblyName>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!--
+      Replaces the NuGet System.Management 9.0.0 (which ships for wasi-wasm
+      but throws PlatformNotSupportedException on every call). This stub
+      provides the same public API surface but routes IWbemServices-style
+      queries through WasmForge's wf_wmi_query env-import, returning real
+      WMI data from the host.
+    -->
+  </PropertyGroup>
+</Project>

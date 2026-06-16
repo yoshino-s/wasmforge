@@ -1,0 +1,8 @@
+
+=== SharpUp: Running Privilege Escalation Checks ===
+[!] Modifialbe scheduled tasks were not evaluated due to permissions.
+
+[-] Not vulnerable to any of the 1 checked modules.
+
+[*] Completed Privesc Checks in <DURATION>
+

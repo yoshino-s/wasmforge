@@ -1,0 +1,30 @@
+
+
+====== WindowsFirewall ======
+
+Collecting Windows Firewall Non-standard Rules
+
+Location                     : SOFTWARE\Policies\Microsoft\WindowsFirewall
+
+Location                     : SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy
+
+Domain Profile
+    Enabled                  : False
+    DisableNotifications     : False
+    DefaultInboundAction     : ALLOW
+    DefaultOutboundAction    : ALLOW
+
+Public Profile
+    Enabled                  : False
+    DisableNotifications     : False
+    DefaultInboundAction     : ALLOW
+    DefaultOutboundAction    : ALLOW
+
+Standard Profile
+    Enabled                  : False
+    DisableNotifications     : False
+    DefaultInboundAction     : ALLOW
+    DefaultOutboundAction    : ALLOW
+
+[*] Completed collection in <DURATION>
+

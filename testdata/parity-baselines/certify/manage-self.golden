@@ -1,0 +1,10 @@
+
+
+ERROR(S):
+  At least one option from group 'Action' (dump-certs) is required.
+
+  --dump-certs    (Group: Action) Dump all certificates in the current machine store
+  --out-file      Redirect all output streams to a file (format: FILE-PATH)
+  --quiet         Omit printing the Certify logo
+
+Certify completed in <DURATION>
