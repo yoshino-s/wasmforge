@@ -42,6 +42,7 @@ network I/O.`,
 		peFileVersion   string
 		precompiledWASM string
 		noAMSIPatch     bool
+		sideload        bool
 	)
 
 	buildCmd := &cobra.Command{
@@ -68,6 +69,7 @@ network I/O.`,
 				BuildTags:       buildTags,
 				Ghost:           ghost,
 				NoAMSIPatch:     noAMSIPatch,
+				Sideload:        sideload,
 				// NativeAOT is auto-set inside build.Run() when --wasm or a C# project is detected.
 				PrecompiledWASM: precompiledWASM,
 				MigrateFunc: func(sourceDir string, v bool) error {
@@ -111,6 +113,7 @@ network I/O.`,
 	buildCmd.Flags().StringVar(&ghost, "ghost", "", "Ghost profile name for gopclntab camouflage (e.g., 'traefik', 'caddy')")
 	buildCmd.Flags().StringVar(&precompiledWASM, "wasm", "", "Use precompiled WASM file instead of compiling Go source")
 	buildCmd.Flags().BoolVar(&noAMSIPatch, "no-amsi-patch", false, "Skip AMSI patching at runtime (use for Go payloads to avoid behavioral AMSI-bypass detections)")
+	buildCmd.Flags().BoolVar(&sideload, "sideload", false, "Emit a Sliver Sideload library (.dll/.so) with exported Run, instead of a standalone binary")
 
 	runCmd := &cobra.Command{
 		Use:   "run [package]",

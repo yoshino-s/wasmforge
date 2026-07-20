@@ -43,3 +43,9 @@ internal/build/build_assets.tar.gz
 
 # Test ghost profiles (regenerated)
 internal/build/ghost_profiles/*.json
+dist/
+
+# Sideload smoke artifacts
+*.dylib
+*.so
+dist/

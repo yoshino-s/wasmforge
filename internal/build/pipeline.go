@@ -65,6 +65,10 @@ type Options struct {
 	// to .NET 10 NativeAOT-WASI before compilation. Set by the CLI layer
 	// to avoid internal/build importing internal/dotnet/migrate.
 	MigrateFunc func(sourceDir string, verbose bool) error
+	// Sideload builds a c-shared library (.dll / .so / .dylib) with a C-exported
+	// Run entrypoint for Sliver Sideload, instead of a standalone EXE/ELF.
+	// The WasmForge CLI itself is never sideloaded — only this forged artifact.
+	Sideload bool
 }
 
 // Run executes the full wasmforge build pipeline:
@@ -214,6 +218,28 @@ func Run(opts Options) error {
 			output = "app"
 		}
 	}
+	if opts.Sideload {
+		// Sideload artifacts are shared libraries; force embed payload path.
+		// Embed decode stubs are XOR-only — disable zlib embed compress (R80
+		// default) so the guest WASM remains loadable.
+		_ = os.Setenv("WASMFORGE_EMBED_PAYLOAD", "1")
+		_ = os.Setenv("WASMFORGE_EMBED_COMPRESS", "0")
+		_ = os.Setenv("WASMFORGE_CHUNK_PAYLOAD", "0")
+		if filepath.Ext(output) == "" {
+			switch {
+			case isTargetingWindows():
+				output += ".dll"
+			case targetGOOS == "darwin":
+				output += ".dylib"
+			default:
+				output += ".so"
+			}
+		}
+		// Authenticode / PE section recipes target standalone EXEs.
+		if opts.SignMode == "" {
+			opts.NoSign = true
+		}
+	}
 
 	// Make output path absolute.
 	if !filepath.IsAbs(output) {
@@ -231,6 +257,7 @@ func Run(opts Options) error {
 		FSMounts:    opts.FSMounts,
 		PE:          opts.PE,
 		Ghost:       opts.Ghost,
+		Sideload:    opts.Sideload,
 	}
 
 	if err := GenerateHost(wasmPath, output, tmpDir, hostCfg, opts.Verbose); err != nil {
@@ -238,7 +265,8 @@ func Run(opts Options) error {
 	}
 
 	// Step 6: Post-process PE (import enrichment + checksum).
-	if isTargetingWindows() {
+	// Skip for sideload DLLs — transforms assume a standalone EXE layout.
+	if isTargetingWindows() && !opts.Sideload {
 		if err := postProcessPE(output, opts.Verbose); err != nil {
 			if opts.Verbose {
 				fmt.Fprintf(os.Stderr, "wasmforge: warning: PE post-processing: %v\n", err)

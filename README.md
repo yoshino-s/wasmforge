@@ -1,5 +1,8 @@
 # WasmForge
 
+> **Fork note:** This is a fork of [praetorian-inc/wasmforge](https://github.com/praetorian-inc/wasmforge) with **`wasmforge build --sideload`** for Sliver Sideload `.dll`/`.so` output. See [docs/SIDELOAD.md](docs/SIDELOAD.md). Upstream standalone EXE/ELF builds remain supported.
+
+
 WasmForge compiles Go and C# programs to WebAssembly, then packages them as single native binaries. The resulting executables sandbox guest code inside a WASM runtime (a per-build fork of [wazero](https://github.com/tetratelabs/wazero)). From inside that sandbox, guests get transparent access to networking, raw sockets, Win32 APIs, and macOS framework APIs.
 
 You can write normal Go using `net.Dial`, `net.Listen`, or `net/http`. You can also migrate an existing .NET Framework C# project. Either way, the output is a single binary that runs on Windows or macOS, without requiring the user to make modifications to the guest source.

