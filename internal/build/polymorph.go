@@ -1317,6 +1317,11 @@ import "C"
 		// Linux/macOS: C .init_array / constructor (above) calls Run, then _exit.
 		b.WriteString("//export Run\n")
 		b.WriteString("func Run(cargs *C.char) {\n")
+		// wazero proc_exit may write debug stacks to the process stderr fd;
+		// Sliver Linux Sideload fails the RPC if stderr is non-empty.
+		b.WriteString("\tif dn, err := os.OpenFile(os.DevNull, os.O_WRONLY, 0); err == nil {\n")
+		b.WriteString("\t\tos.Stderr = dn\n")
+		b.WriteString("\t}\n")
 		b.WriteString("\targs := []string{\"app\"}\n")
 		b.WriteString("\tif cargs != nil {\n")
 		b.WriteString("\t\tif s := C.GoString(cargs); s != \"\" {\n")
