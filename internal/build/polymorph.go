@@ -1165,6 +1165,9 @@ import "C"
 	if pc.PEPayload && (pc.ChunkPayload || pc.LoaderVariant != 2) {
 		// Variant C (LoaderVariant=2) uses a manual read loop; chunked uses io.ReadAll.
 		b.WriteString("\t\"io\"\n")
+	} else if cfg.Sideload {
+		// Discard guest stderr — Sliver Linux Sideload treats any stderr as failure.
+		b.WriteString("\t\"io\"\n")
 	}
 	b.WriteString("\t\"os\"\n")
 	if pc.PEPayload || cfg.Sideload {
@@ -1283,7 +1286,12 @@ import "C"
 	b.WriteString(fmt.Sprintf("\t\tArgs:       %s,\n", argsExpr))
 	b.WriteString("\t\tEnv:        os.Environ(),\n")
 	b.WriteString("\t\tStdout:     os.Stdout,\n")
-	b.WriteString("\t\tStderr:     os.Stderr,\n")
+	if cfg.Sideload {
+		// Sliver Linux Sideload fails the RPC if the host process writes stderr.
+		b.WriteString("\t\tStderr:     io.Discard,\n")
+	} else {
+		b.WriteString("\t\tStderr:     os.Stderr,\n")
+	}
 	b.WriteString("\t\tStdin:      os.Stdin,\n")
 	b.WriteString(fmt.Sprintf("\t\t%s: %v,\n", pc.FieldRawNet, cfg.RawSockets))
 	b.WriteString(fmt.Sprintf("\t\t%s:  %v,\n", pc.FieldSysAPIs, cfg.Win32APIs))
@@ -1294,11 +1302,11 @@ import "C"
 
 	// Run.
 	b.WriteString(fmt.Sprintf("\tif err := %s.Run(ctx, %s); err != nil {\n", pc.RuntimePkg, pc.ConfigVar))
-	b.WriteString("\t\tfmt.Fprintf(os.Stderr, \"%v\\n\", err)\n")
 	if cfg.Sideload {
-		// Do not os.Exit from a shared library — return to the implant.
+		b.WriteString("\t\tfmt.Fprintf(os.Stdout, \"%v\\n\", err)\n")
 		b.WriteString("\t\treturn\n")
 	} else {
+		b.WriteString("\t\tfmt.Fprintf(os.Stderr, \"%v\\n\", err)\n")
 		b.WriteString("\t\tos.Exit(1)\n")
 	}
 	b.WriteString("\t}\n")
