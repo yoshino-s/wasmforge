@@ -28,8 +28,12 @@ CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc \
 
 On the implant:
 
-- Entrypoint: `Run`
-- Args: space-separated string (Windows) or `LD_PARAMS` (Linux when the args pointer is null)
+| OS | Mechanism | Notes |
+|----|-----------|-------|
+| Windows | `dlopen` + export `Run(char*)` | Set Sideload `EntryPoint=Run` |
+| Linux / macOS | `LD_PRELOAD` + `LD_PARAMS` | EntryPoint is **ignored**; the `.so` auto-runs from `init` when preloaded |
+
+Host process for Linux is typically `/bin/bash` (stdout/stderr captured as Result).
 
 New tool or guest version → forge again and redeploy. There is no empty generic runtime that loads arbitrary wasm later.
 

